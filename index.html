@@ -1198,16 +1198,16 @@
           <div class="form-row">
             <div class="form-group">
               <label>Ime</label>
-              <input type="text" placeholder="Vaše ime" required />
+              <input type="text" name="ime" placeholder="Vaše ime" required />
             </div>
             <div class="form-group">
               <label>Email</label>
-              <input type="email" placeholder="adresa@email.com" required />
+              <input type="email" name="email" placeholder="vasa@email.com" required />
             </div>
           </div>
           <div class="form-group">
             <label>Tema razgovora</label>
-            <select>
+            <select name="tema">
               <option value="">Odaberite temu...</option>
               <option>Anksioznost i stres</option>
               <option>Odnosi i veze</option>
@@ -1219,7 +1219,8 @@
           </div>
           <div class="form-group">
             <label>Poruka</label>
-            <textarea placeholder="Napišite nekoliko rečenica o tome šta vas dovodi ovdje ako želite..."></textarea>
+            <textarea name="poruka"
+              placeholder="Napišite nekoliko rečenica o tome šta vas dovodi ovdje ako želite..."></textarea>
           </div>
           <button type="submit" class="submit-btn">Pošaljite upit →</button>
           <div class="success-msg" id="successMsg">✓ Hvala! Javiću vam se uskoro.</div>
