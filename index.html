@@ -1497,13 +1497,19 @@
     // Form submit
     function handleSubmit(e) {
       e.preventDefault();
-      const btn = e.target.querySelector('.submit-btn');
-      btn.textContent = 'Slanje...';
-      btn.disabled = true;
-      setTimeout(() => {
-        document.getElementById('successMsg').style.display = 'block';
-        btn.style.display = 'none';
-      }, 1000);
+      const form = e.target;
+      const data = new FormData(form);
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      })
+        .then(() => {
+          document.getElementById('successMsg').style.display = 'block';
+          form.querySelector('.submit-btn').style.display = 'none';
+        })
+        .catch(() => alert('Greška, pokušajte ponovo.'));
     }
   </script>
 </body>
