@@ -1192,7 +1192,9 @@
         </div>
       </div>
       <div>
-        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <form class="contact-form" id="contactForm" name="kontakt" method="POST" data-netlify="true"
+          onsubmit="handleSubmit(event)">
+          <input type="hidden" name="form-name" value="kontakt" />
           <div class="form-row">
             <div class="form-group">
               <label>Ime</label>
