@@ -1509,8 +1509,8 @@
         .then(() => {
           document.getElementById('successMsg').style.display = 'block';
           form.querySelector('.submit-btn').style.display = 'none';
+          form.reset();
         })
-        .catch(() => alert('Greška, pokušajte ponovo.'));
     }
   </script>
 </body>
