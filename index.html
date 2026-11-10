@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="sr-Latn-ME">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
   <title>Psihoterapija Jovana Simoni | Psihoterapeut Podgorica</title>
-  <meta name="description" content="Psihoterapija i psihološko savjetovanje u Podgorici i online za cijelu Crnu Goru. Rad sa anksioznošću, depresijom, odnosima i ličnim rastom. Zakažite prvi razgovor." />
-  <meta name="keywords" content="psihoterapeut Podgorica, psihoterapija Podgorica, psihoterapeut Budva, psihoterapeut Crna Gora, terapija Podgorica, psiholog Podgorica, online psihoterapija, Jovana Simoni, unutrašnji prostor" />
+  <meta name="description"
+    content="Psihoterapija i psihološko savjetovanje u Podgorici i online za cijelu Crnu Goru. Rad sa anksioznošću, depresijom, odnosima i ličnim rastom. Zakažite prvi razgovor." />
+  <meta name="keywords"
+    content="psihoterapeut Podgorica, psihoterapija Podgorica, psihoterapeut Budva, psihoterapeut Crna Gora, terapija Podgorica, psiholog Podgorica, online psihoterapija, Jovana Simoni, unutrašnji prostor" />
   <meta name="author" content="Jovana Simoni" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://unutrasnjiprostor.me/" />
@@ -48,7 +51,7 @@
       { "@type": "Question", "name": "Kako izgleda prvi razgovor?",
         "acceptedAnswer": { "@type": "Answer", "text": "Upoznamo se, kažete mi šta vas dovodi i zajedno vidimo da li vam ovakav rad odgovara. Nemate nikakvu obavezu da nastavite." } },
       { "@type": "Question", "name": "Da li radite online?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Da. Online radim sa ljudima iz cijele Crne Gore, iz Budve, Bara, Kotora, Nikšića i drugih gradova." } },
+        "acceptedAnswer": { "@type": "Answer", "text": "Da. Online radim sa ljudima iz cijele Crne Gore i Balkana." } },
       { "@type": "Question", "name": "Koliko traje seansa?",
         "acceptedAnswer": { "@type": "Answer", "text": "Seansa traje 50 minuta. Najčešće se viđamo jednom sedmično." } },
       { "@type": "Question", "name": "Da li je terapija povjerljiva?",
@@ -59,427 +62,1300 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 
   <style>
     :root {
-      --clay:    #C49A7A;
+      --clay: #C49A7A;
       --clay-lt: #E8D5C0;
-      --sage:    #8A9E8C;
+      --sage: #8A9E8C;
       --sage-lt: #D6E2D7;
-      --cream:   #F7F2EC;
-      --ink:     #2C2420;
-      --ink-soft:#6B5C55;
-      --white:   #FDFAF7;
-      --border:  #E0D4C8;
+      --cream: #F7F2EC;
+      --ink: #2C2420;
+      --ink-soft: #6B5C55;
+      --white: #FDFAF7;
+      --border: #E0D4C8;
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); overflow-x: hidden; }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
     body::before {
-      content: ''; position: fixed; inset: 0;
+      content: '';
+      position: fixed;
+      inset: 0;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none; z-index: 0; opacity: 0.6;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.6;
     }
-    img { max-width: 100%; display: block; }
-    :focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--clay);
+      outline-offset: 3px;
+    }
 
     /* NAV */
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 4vw; background: rgba(247,242,236,0.88); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); transition: box-shadow 0.3s; }
-    nav.scrolled { box-shadow: 0 2px 24px rgba(44,36,32,0.08); }
-    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; color: var(--ink); text-decoration: none; line-height: 1.1; }
-    .nav-logo span { color: var(--clay); font-style: italic; }
-    .nav-links { display: flex; gap: 2.2rem; list-style: none; }
-    .nav-links a { font-size: 0.82rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--clay); }
-    .nav-cta { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--clay); color: var(--white); padding: 0.6rem 1.4rem; border-radius: 2rem; text-decoration: none; white-space: nowrap; transition: background 0.2s; }
-    .nav-cta:hover { background: var(--ink); }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.1rem 4vw;
+      background: rgba(247, 242, 236, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow 0.3s;
+    }
+
+    nav.scrolled {
+      box-shadow: 0 2px 24px rgba(44, 36, 32, 0.08);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--ink);
+      text-decoration: none;
+      line-height: 1.1;
+    }
+
+    .nav-logo span {
+      color: var(--clay);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--clay);
+    }
+
+    .nav-cta {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--clay);
+      color: var(--white);
+      padding: 0.6rem 1.4rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .nav-cta:hover {
+      background: var(--ink);
+    }
 
     /* HERO */
-    .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 8rem 4vw 5rem; gap: 4rem; position: relative; z-index: 1; }
-    .hero-left { max-width: 560px; }
-    .hero-eyebrow { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--clay); margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s 0.2s forwards; }
-    .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 5vw, 5.5rem); font-weight: 300; line-height: 1.08; margin-bottom: 1.8rem; opacity: 0; animation: fadeUp 0.8s 0.4s forwards; }
-    .hero-title em { font-style: italic; color: var(--clay); }
-    .hero-desc { font-size: 1.05rem; line-height: 1.75; color: var(--ink-soft); max-width: 460px; margin-bottom: 2.5rem; font-weight: 300; opacity: 0; animation: fadeUp 0.8s 0.6s forwards; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; opacity: 0; animation: fadeUp 0.8s 0.8s forwards; }
-    .btn-primary, .btn-ghost { display: inline-block; padding: 0.85rem 2rem; border-radius: 2rem; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
-    .btn-primary { background: var(--clay); color: var(--white); }
-    .btn-primary:hover { background: var(--ink); }
-    .btn-ghost { border: 1.5px solid var(--clay); color: var(--clay); }
-    .btn-ghost:hover { background: var(--clay); color: var(--white); }
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 8rem 4vw 5rem;
+      gap: 4rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-left {
+      max-width: 560px;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--clay);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 5vw, 5.5rem);
+      font-weight: 300;
+      line-height: 1.08;
+      margin-bottom: 1.8rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--clay);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--ink-soft);
+      max-width: 460px;
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.6s forwards;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.8s forwards;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      border-radius: 2rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--clay);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--ink);
+    }
+
+    .btn-ghost {
+      border: 1.5px solid var(--clay);
+      color: var(--clay);
+    }
+
+    .btn-ghost:hover {
+      background: var(--clay);
+      color: var(--white);
+    }
 
     /* 3D slika */
-    .hero-right { position: relative; display: flex; justify-content: center; align-items: center; opacity: 0; animation: fadeIn 1.2s 0.4s forwards; }
-    .hero-3d { position: relative; width: min(500px, 42vw); aspect-ratio: 1; }
-    #hero3d { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: pan-y; }
-    #hero3d:active { cursor: grabbing; }
-    .hero-shadow { position: absolute; left: 22%; right: 22%; bottom: 2%; height: 7%; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(44,36,32,0.22), transparent 70%); animation: shadow 5s ease-in-out infinite; }
-    .hero-fallback { position: absolute; inset: 12%; width: 76%; height: 76%; object-fit: cover; border-radius: 50%; box-shadow: 0 20px 60px rgba(44,36,32,0.15); display: none; }
+    .hero-right {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      animation: fadeIn 1.2s 0.4s forwards;
+    }
+
+    .hero-3d {
+      position: relative;
+      width: min(500px, 42vw);
+      aspect-ratio: 1;
+    }
+
+    #hero3d {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: grab;
+      touch-action: pan-y;
+    }
+
+    #hero3d:active {
+      cursor: grabbing;
+    }
+
+    .hero-shadow {
+      position: absolute;
+      left: 22%;
+      right: 22%;
+      bottom: 2%;
+      height: 7%;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center, rgba(44, 36, 32, 0.22), transparent 70%);
+      animation: shadow 5s ease-in-out infinite;
+    }
+
+    .hero-fallback {
+      position: absolute;
+      inset: 12%;
+      width: 76%;
+      height: 76%;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 20px 60px rgba(44, 36, 32, 0.15);
+      display: none;
+    }
 
     /* SECTIONS */
-    section { position: relative; z-index: 1; }
-    .section-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--clay); margin-bottom: 1rem; }
-    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 3.5vw, 3.5rem); font-weight: 300; line-height: 1.2; margin-bottom: 1.2rem; }
-    .section-intro { color: var(--ink-soft); font-weight: 300; line-height: 1.75; max-width: 520px; }
+    section {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--clay);
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+
+    .section-intro {
+      color: var(--ink-soft);
+      font-weight: 300;
+      line-height: 1.75;
+      max-width: 520px;
+    }
 
     /* BLOG */
-    .blog-section { padding: 6rem 4vw; background: var(--white); }
-    .blog-header { margin-bottom: 3.5rem; }
-    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
-    .blog-card { display: flex; flex-direction: column; background: var(--cream); border-radius: 1.2rem; overflow: hidden; border: 1px solid var(--border); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; text-align: left; font: inherit; color: inherit; padding: 0; }
-    .blog-card:hover, .blog-card:focus-visible { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(44,36,32,0.1); }
+    .blog-section {
+      padding: 6rem 4vw;
+      background: var(--white);
+    }
+
+    .blog-header {
+      margin-bottom: 3.5rem;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .blog-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--cream);
+      border-radius: 1.2rem;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      text-align: left;
+      font: inherit;
+      color: inherit;
+      padding: 0;
+    }
+
+    .blog-card:hover,
+    .blog-card:focus-visible {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(44, 36, 32, 0.1);
+    }
+
     /* Instagram format 4:5, slika se vidi cijela */
-    .card-thumb { aspect-ratio: 4 / 5; width: 100%; display: flex; align-items: center; justify-content: center; background: var(--clay-lt); }
-    .card-thumb img { width: 100%; height: 100%; object-fit: contain; }
-    .card-thumb .sym { font-family: 'Cormorant Garamond', serif; font-size: 4rem; color: var(--clay); opacity: 0.5; font-weight: 300; }
-    .card-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
-    .card-tag { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--clay); margin-bottom: 0.75rem; }
-    .card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; line-height: 1.3; margin-bottom: 0.75rem; }
-    .card-excerpt { font-size: 0.9rem; line-height: 1.7; color: var(--ink-soft); font-weight: 300; margin-bottom: 1.2rem; }
-    .card-meta { margin-top: auto; display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--ink-soft); }
-    .card-meta .read { color: var(--clay); font-weight: 500; }
-    .blog-status { color: var(--ink-soft); font-weight: 300; }
+    .card-thumb {
+      aspect-ratio: 4 / 5;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--clay-lt);
+    }
+
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .card-thumb .sym {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4rem;
+      color: var(--clay);
+      opacity: 0.5;
+      font-weight: 300;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-tag {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--clay);
+      margin-bottom: 0.75rem;
+    }
+
+    .card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-excerpt {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--ink-soft);
+      font-weight: 300;
+      margin-bottom: 1.2rem;
+    }
+
+    .card-meta {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--ink-soft);
+    }
+
+    .card-meta .read {
+      color: var(--clay);
+      font-weight: 500;
+    }
+
+    .blog-status {
+      color: var(--ink-soft);
+      font-weight: 300;
+    }
 
     /* ABOUT */
-    .about-section { padding: 7rem 4vw; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; max-width: 1200px; margin: 0 auto; }
-    .about-visual { position: relative; display: flex; justify-content: center; }
-    .about-circle { width: min(360px,36vw); aspect-ratio: 1; border-radius: 50%; background: linear-gradient(135deg, var(--clay-lt), var(--sage-lt)); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: clamp(4rem,8vw,7rem); font-weight: 300; color: var(--clay); font-style: italic; position: relative; }
-    .about-circle::after { content: ''; position: absolute; inset: -12px; border-radius: 50%; border: 1px dashed var(--clay); opacity: 0.4; animation: rotateSlow 30s linear infinite; }
-    .about-quote { position: absolute; bottom: -1rem; right: 0; background: var(--white); border: 1px solid var(--border); border-radius: 1rem; padding: 1.2rem 1.5rem; max-width: 230px; box-shadow: 0 8px 32px rgba(44,36,32,0.08); }
-    .about-quote p { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-style: italic; line-height: 1.5; }
-    .about-content p { font-size: 1rem; line-height: 1.8; color: var(--ink-soft); font-weight: 300; margin-bottom: 1.2rem; max-width: 60ch; }
-    .about-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.8rem; list-style: none; }
-    .about-tags li { font-size: 0.78rem; font-weight: 500; padding: 0.4rem 1rem; border-radius: 2rem; background: var(--sage-lt); color: #5F7462; }
+    .about-section {
+      padding: 7rem 4vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .about-circle {
+      width: min(360px, 36vw);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--clay-lt), var(--sage-lt));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(4rem, 8vw, 7rem);
+      font-weight: 300;
+      color: var(--clay);
+      font-style: italic;
+      position: relative;
+    }
+
+    .about-circle::after {
+      content: '';
+      position: absolute;
+      inset: -12px;
+      border-radius: 50%;
+      border: 1px dashed var(--clay);
+      opacity: 0.4;
+      animation: rotateSlow 30s linear infinite;
+    }
+
+    .about-quote {
+      position: absolute;
+      bottom: -1rem;
+      right: 0;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.2rem 1.5rem;
+      max-width: 230px;
+      box-shadow: 0 8px 32px rgba(44, 36, 32, 0.08);
+    }
+
+    .about-quote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .about-content p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-soft);
+      font-weight: 300;
+      margin-bottom: 1.2rem;
+      max-width: 60ch;
+    }
+
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.8rem;
+      list-style: none;
+    }
+
+    .about-tags li {
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.4rem 1rem;
+      border-radius: 2rem;
+      background: var(--sage-lt);
+      color: #5F7462;
+    }
 
     /* USLUGE */
-    .services { padding: 6rem 4vw; background: var(--white); }
-    .services-inner { max-width: 1100px; margin: 0 auto; }
-    .svc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
-    .svc { background: var(--cream); border: 1px solid var(--border); border-radius: 1rem; padding: 1.8rem; }
-    .svc h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; margin-bottom: 0.6rem; }
-    .svc p { font-size: 0.92rem; line-height: 1.7; color: var(--ink-soft); font-weight: 300; }
-    .svc-note { margin-top: 2.5rem; font-size: 0.92rem; line-height: 1.8; color: var(--ink-soft); font-weight: 300; max-width: 760px; }
+    .services {
+      padding: 6rem 4vw;
+      background: var(--white);
+    }
+
+    .services-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .svc {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.8rem;
+    }
+
+    .svc h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 0.6rem;
+    }
+
+    .svc p {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      color: var(--ink-soft);
+      font-weight: 300;
+    }
+
+    .svc-note {
+      margin-top: 2.5rem;
+      font-size: 0.92rem;
+      line-height: 1.8;
+      color: var(--ink-soft);
+      font-weight: 300;
+      max-width: 760px;
+    }
 
     /* FAQ */
-    .faq { padding: 6rem 4vw; }
-    .faq-inner { max-width: 800px; margin: 0 auto; }
-    .faq-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
-    .faq-list details { background: var(--white); border: 1px solid var(--border); border-radius: 0.8rem; padding: 1.3rem 1.6rem; }
-    .faq-list summary { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; list-style: none; display: flex; justify-content: space-between; gap: 1rem; cursor: pointer; }
-    .faq-list summary::-webkit-details-marker { display: none; }
-    .faq-list summary::after { content: '+'; color: var(--clay); font-size: 1.4rem; line-height: 1; transition: transform 0.2s; }
-    .faq-list details[open] summary::after { transform: rotate(45deg); }
-    .faq-list details p { margin-top: 1rem; font-size: 0.92rem; line-height: 1.75; color: var(--ink-soft); font-weight: 300; }
+    .faq {
+      padding: 6rem 4vw;
+    }
+
+    .faq-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .faq-list details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 0.8rem;
+      padding: 1.3rem 1.6rem;
+    }
+
+    .faq-list summary {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      cursor: pointer;
+    }
+
+    .faq-list summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-list summary::after {
+      content: '+';
+      color: var(--clay);
+      font-size: 1.4rem;
+      line-height: 1;
+      transition: transform 0.2s;
+    }
+
+    .faq-list details[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-list details p {
+      margin-top: 1rem;
+      font-size: 0.92rem;
+      line-height: 1.75;
+      color: var(--ink-soft);
+      font-weight: 300;
+    }
 
     /* KONTAKT */
-    .contact-section { padding: 7rem 4vw; background: var(--ink); color: var(--cream); position: relative; overflow: hidden; }
-    .contact-section::before { content: 'Kontakt'; position: absolute; font-family: 'Cormorant Garamond', serif; font-size: clamp(6rem,14vw,16rem); font-weight: 300; font-style: italic; color: rgba(255,255,255,0.03); bottom: -2rem; right: 2vw; pointer-events: none; line-height: 1; }
-    .contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; position: relative; }
-    .contact-left .section-label { color: var(--clay-lt); }
-    .contact-left .section-title { color: var(--cream); }
-    .contact-left > p { font-size: 1rem; line-height: 1.8; color: rgba(247,242,236,0.7); font-weight: 300; margin-bottom: 2rem; }
-    .contact-info { list-style: none; display: grid; gap: 0.9rem; }
-    .contact-info li { display: grid; grid-template-columns: 6.5rem 1fr; font-size: 0.92rem; color: rgba(247,242,236,0.85); }
-    .contact-info .k { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--clay); padding-top: 0.15rem; }
-    .contact-info a { color: rgba(247,242,236,0.85); }
-    .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
-    .form-group label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--clay-lt); }
-    .form-group input, .form-group textarea, .form-group select { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: 0.6rem; padding: 0.85rem 1rem; color: var(--cream); font-family: inherit; font-size: 0.92rem; font-weight: 300; outline: none; transition: border-color 0.2s; }
-    .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(247,242,236,0.35); }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--clay); }
-    .form-group select option { background: var(--ink); }
-    .form-group textarea { resize: vertical; min-height: 120px; }
-    .submit-btn { align-self: flex-start; margin-top: 0.5rem; padding: 1rem 2rem; background: var(--clay); color: var(--white); border: none; border-radius: 2rem; font-family: inherit; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
-    .submit-btn:hover { background: var(--clay-lt); color: var(--ink); }
-    .submit-btn:disabled { opacity: 0.6; cursor: wait; }
-    .form-msg { display: none; border-radius: 0.8rem; padding: 1rem 1.4rem; font-size: 0.92rem; background: rgba(138,158,140,0.15); border: 1px solid var(--sage); color: var(--sage-lt); }
-    .form-msg.error { background: rgba(196,122,122,0.15); border-color: #C47A7A; color: #F0D2D2; }
+    .contact-section {
+      padding: 7rem 4vw;
+      background: var(--ink);
+      color: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
 
-    footer { background: #1A1310; color: rgba(247,242,236,0.45); padding: 2rem 4vw; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: 0.8rem; position: relative; z-index: 1; }
-    footer a { color: var(--clay); text-decoration: none; }
-    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: rgba(247,242,236,0.75); font-style: italic; }
+    .contact-section::before {
+      content: 'Kontakt';
+      position: absolute;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(6rem, 14vw, 16rem);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.03);
+      bottom: -2rem;
+      right: 2vw;
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    .contact-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+      position: relative;
+    }
+
+    .contact-left .section-label {
+      color: var(--clay-lt);
+    }
+
+    .contact-left .section-title {
+      color: var(--cream);
+    }
+
+    .contact-left>p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(247, 242, 236, 0.7);
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    .contact-info {
+      list-style: none;
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .contact-info li {
+      display: grid;
+      grid-template-columns: 6.5rem 1fr;
+      font-size: 0.92rem;
+      color: rgba(247, 242, 236, 0.85);
+    }
+
+    .contact-info .k {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--clay);
+      padding-top: 0.15rem;
+    }
+
+    .contact-info a {
+      color: rgba(247, 242, 236, 0.85);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-group label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--clay-lt);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 0.6rem;
+      padding: 0.85rem 1rem;
+      color: var(--cream);
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 300;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(247, 242, 236, 0.35);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--clay);
+    }
+
+    .form-group select option {
+      background: var(--ink);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      align-self: flex-start;
+      margin-top: 0.5rem;
+      padding: 1rem 2rem;
+      background: var(--clay);
+      color: var(--white);
+      border: none;
+      border-radius: 2rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .submit-btn:hover {
+      background: var(--clay-lt);
+      color: var(--ink);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+
+    .form-msg {
+      display: none;
+      border-radius: 0.8rem;
+      padding: 1rem 1.4rem;
+      font-size: 0.92rem;
+      background: rgba(138, 158, 140, 0.15);
+      border: 1px solid var(--sage);
+      color: var(--sage-lt);
+    }
+
+    .form-msg.error {
+      background: rgba(196, 122, 122, 0.15);
+      border-color: #C47A7A;
+      color: #F0D2D2;
+    }
+
+    footer {
+      background: #1A1310;
+      color: rgba(247, 242, 236, 0.45);
+      padding: 2rem 4vw;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    footer a {
+      color: var(--clay);
+      text-decoration: none;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: rgba(247, 242, 236, 0.75);
+      font-style: italic;
+    }
 
     /* MODAL */
-    .modal-overlay { position: fixed; inset: 0; background: rgba(44,36,32,0.7); backdrop-filter: blur(8px); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 1.5rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
-    .modal-overlay.open { opacity: 1; pointer-events: all; }
-    .modal-card { background: var(--white); border-radius: 1.5rem; max-width: 680px; width: 100%; max-height: 88vh; overflow-y: auto; padding: 3rem; position: relative; transform: translateY(20px); transition: transform 0.3s; }
-    .modal-overlay.open .modal-card { transform: none; }
-    .modal-close { position: absolute; top: 1.2rem; right: 1.2rem; background: var(--clay-lt); border: none; width: 38px; height: 38px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; color: var(--clay); }
-    .modal-close:hover { background: var(--clay); color: var(--white); }
-    .modal-img { width: 100%; max-width: 420px; margin: 0 auto 1.8rem; border-radius: 0.8rem; }
-    .modal-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--clay); margin-bottom: 0.8rem; }
-    .modal-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 400; line-height: 1.25; margin-bottom: 1rem; }
-    .modal-meta { font-size: 0.8rem; color: var(--ink-soft); margin-bottom: 1.8rem; padding-bottom: 1.8rem; border-bottom: 1px solid var(--border); }
-    .modal-body { font-size: 0.98rem; line-height: 1.85; color: var(--ink-soft); font-weight: 300; }
-    .modal-body p { margin-bottom: 1rem; }
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(44, 36, 32, 0.7);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
 
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes rotateSlow { to { transform: rotate(360deg); } }
-    @keyframes shadow { 0%,100% { transform: scaleX(1); opacity: 1; } 50% { transform: scaleX(0.86); opacity: 0.7; } }
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .modal-card {
+      background: var(--white);
+      border-radius: 1.5rem;
+      max-width: 680px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 3rem;
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.3s;
+    }
+
+    .modal-overlay.open .modal-card {
+      transform: none;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+      background: var(--clay-lt);
+      border: none;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: var(--clay);
+    }
+
+    .modal-close:hover {
+      background: var(--clay);
+      color: var(--white);
+    }
+
+    .modal-img {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto 1.8rem;
+      border-radius: 0.8rem;
+    }
+
+    .modal-tag {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--clay);
+      margin-bottom: 0.8rem;
+    }
+
+    .modal-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    .modal-meta {
+      font-size: 0.8rem;
+      color: var(--ink-soft);
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .modal-body {
+      font-size: 0.98rem;
+      line-height: 1.85;
+      color: var(--ink-soft);
+      font-weight: 300;
+    }
+
+    .modal-body p {
+      margin-bottom: 1rem;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes rotateSlow {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes shadow {
+
+      0%,
+      100% {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scaleX(0.86);
+        opacity: 0.7;
+      }
+    }
 
     @media (max-width: 900px) {
-      .nav-links { display: none; }
-      .nav-logo { font-size: 1.2rem; }
-      .hero { grid-template-columns: 1fr; text-align: center; min-height: auto; padding-top: 7rem; gap: 2rem; }
-      .hero-left { max-width: 100%; }
-      .hero-desc { margin-inline: auto; }
-      .hero-actions { justify-content: center; }
-      .hero-right { order: -1; }
-      .hero-3d { width: min(340px, 80vw); }
-      .about-section { grid-template-columns: 1fr; gap: 3rem; }
-      .about-circle { width: 240px; }
-      .about-quote { position: static; margin-top: 1.5rem; max-width: 100%; }
-      .about-visual { flex-direction: column; align-items: center; }
-      .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .form-row { grid-template-columns: 1fr; }
+      .nav-links {
+        display: none;
+      }
+
+      .nav-logo {
+        font-size: 1.2rem;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        min-height: auto;
+        padding-top: 7rem;
+        gap: 2rem;
+      }
+
+      .hero-left {
+        max-width: 100%;
+      }
+
+      .hero-desc {
+        margin-inline: auto;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero-right {
+        order: -1;
+      }
+
+      .hero-3d {
+        width: min(340px, 80vw);
+      }
+
+      .about-section {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .about-circle {
+        width: 240px;
+      }
+
+      .about-quote {
+        position: static;
+        margin-top: 1.5rem;
+        max-width: 100%;
+      }
+
+      .about-visual {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
     }
+
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0ms !important; transition: none !important; }
-      html { scroll-behavior: auto; }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0ms !important;
+        transition: none !important;
+      }
+
+      html {
+        scroll-behavior: auto;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<nav id="nav">
-  <a href="#" class="nav-logo">Psihoterapija <span>Jovana Simoni</span></a>
-  <ul class="nav-links">
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#o-meni">O meni</a></li>
-    <li><a href="#usluge">Usluge</a></li>
-    <li><a href="#kontakt">Kontakt</a></li>
-  </ul>
-  <a href="#kontakt" class="nav-cta">Zakažite seansu</a>
-</nav>
+  <nav id="nav">
+    <a href="#" class="nav-logo">Psihoterapija <span>Jovana Simoni</span></a>
+    <ul class="nav-links">
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#o-meni">O meni</a></li>
+      <li><a href="#usluge">Usluge</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="#kontakt" class="nav-cta">Zakažite seansu</a>
+  </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-left">
-    <p class="hero-eyebrow">Psihoterapija u Podgorici i online</p>
-    <h1 class="hero-title">Dobro došli u<br>vaš <em>unutrašnji</em><br>prostor</h1>
-    <p class="hero-desc">
-      Ja sam Jovana. Pomažem odraslima da bolje razumiju sebe, svoje emocije i svoje odnose.
-      Radim uživo u Podgorici i online, sa ljudima iz Budve i cijele Crne Gore.
-    </p>
-    <div class="hero-actions">
-      <a href="#kontakt" class="btn-primary">Zakažite razgovor</a>
-      <a href="#blog" class="btn-ghost">Pročitajte blog</a>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-3d">
-      <div class="hero-shadow" aria-hidden="true"></div>
-      <canvas id="hero3d" aria-hidden="true"></canvas>
-      <img class="hero-fallback" id="heroFallback" src="foto.jpg" alt="Unutrašnji prostor, psihoterapija Jovana Simoni" />
-    </div>
-  </div>
-</section>
-
-<!-- BLOG -->
-<section class="blog-section" id="blog">
-  <div class="blog-header">
-    <p class="section-label">Blog</p>
-    <h2 class="section-title">Tekstovi</h2>
-    <p class="section-intro">Pišem o stvarima o kojima razgovaramo i u terapiji. O promjeni, strahu, odnosima i o tome kako da budemo malo blaži prema sebi.</p>
-  </div>
-  <div class="blog-grid" id="blogGrid">
-    <p class="blog-status">Tekstovi se učitavaju.</p>
-  </div>
-</section>
-
-<!-- O MENI -->
-<section id="o-meni">
-  <div class="about-section">
-    <div class="about-visual">
-      <div class="about-circle">Ja</div>
-      <div class="about-quote">
-        <p>„Tišina je ponekad najglasniji odgovor koji možemo dati sebi.“</p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Psihoterapija u Podgorici i online</p>
+      <h1 class="hero-title">Dobro došli u<br>vaš <em>unutrašnji</em><br>prostor</h1>
+      <p class="hero-desc">
+        Ja sam Jovana. Pomažem ljudima da bolje razumiju sebe, svoje emocije i svoje odnose.
+        Radim uživo u Podgorici i online bilo gdje da ste.
+      </p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn-primary">Zakažite razgovor</a>
+        <a href="#blog" class="btn-ghost">Pročitajte blog</a>
       </div>
     </div>
-    <div class="about-content">
-      <p class="section-label">O meni</p>
-      <h2 class="section-title">Zdravo, ja sam Jovana</h2>
-      <p>U terapiji mi je najvažnije da se osjećate sigurno. Ne žurimo i ne sudimo. Zajedno gledamo ono što vas muči i tražimo odakle dolazi.</p>
-      <p>Radim sa odraslima. Najčešće mi dolaze ljudi koji se bore sa anksioznošću, tugom, problemima u odnosima, iscrpljenošću od posla, ili jednostavno osjećaju da su negdje zapeli.</p>
-      <p>Radim integrativnim psihodinamskim pristupom. Seanse traju 50 minuta i održavaju se uživo u Podgorici ili online.</p>
-      <ul class="about-tags">
-        <li>Anksioznost</li><li>Depresija</li><li>Odnosi</li><li>Trauma</li>
-        <li>Samopoštovanje</li><li>Burnout</li><li>Lični rast</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- USLUGE -->
-<section class="services" id="usluge">
-  <div class="services-inner">
-    <p class="section-label">Usluge</p>
-    <h2 class="section-title">Kako možemo da radimo</h2>
-    <div class="svc-grid">
-      <div class="svc">
-        <h3>Individualna psihoterapija</h3>
-        <p>Redovni susreti jednom sedmično, uživo u Podgorici. Prostor da polako i dublje razumijete sebe.</p>
-      </div>
-      <div class="svc">
-        <h3>Online terapija</h3>
-        <p>Isti rad, samo preko video poziva. Pogodno ako ste u Budvi, Baru, Kotoru, Nikšiću ili bilo gdje drugo.</p>
-      </div>
-      <div class="svc">
-        <h3>Savjetovanje</h3>
-        <p>Kraći rad kada prolazite kroz neku promjenu, stres ili tešku odluku i treba vam neko da razmišlja sa vama.</p>
+    <div class="hero-right">
+      <div class="hero-3d">
+        <div class="hero-shadow" aria-hidden="true"></div>
+        <canvas id="hero3d" aria-hidden="true"></canvas>
+        <img class="hero-fallback" id="heroFallback" src="foto.jpg"
+          alt="Unutrašnji prostor, psihoterapija Jovana Simoni" />
       </div>
     </div>
-    <p class="svc-note">Ako tražite psihoterapeuta u Podgorici ili u Budvi, ili vam treba online psihoterapija bilo gdje u Crnoj Gori, pišite mi pa da dogovorimo prvi razgovor.</p>
-  </div>
-</section>
+  </section>
 
-<!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="faq-inner">
-    <p class="section-label">Pitanja</p>
-    <h2 class="section-title">Ono što ljudi najčešće pitaju</h2>
-    <div class="faq-list">
-      <details>
-        <summary>Kako izgleda prvi razgovor?</summary>
-        <p>Upoznamo se, kažete mi šta vas dovodi i zajedno vidimo da li vam ovakav rad odgovara. Nemate nikakvu obavezu da nastavite.</p>
-      </details>
-      <details>
-        <summary>Da li radite online?</summary>
-        <p>Da. Online radim sa ljudima iz cijele Crne Gore, iz Budve, Bara, Kotora, Nikšića i drugih gradova. Treba vam samo mirno mjesto i internet.</p>
-      </details>
-      <details>
-        <summary>Koliko traje seansa?</summary>
-        <p>Seansa traje 50 minuta. Najčešće se viđamo jednom sedmično, a ritam možemo prilagoditi vama.</p>
-      </details>
-      <details>
-        <summary>Sa čim mogu da vam se obratim?</summary>
-        <p>Sa anksioznošću, depresijom, burnoutom, traumom, niskim samopoštovanjem, problemima u vezi ili porodici, i svim većim životnim promjenama. Ako niste sigurni da li je vaša tema za terapiju, pišite mi. Vjerovatno jeste.</p>
-      </details>
-      <details>
-        <summary>Da li je terapija povjerljiva?</summary>
-        <p>Jeste. Sve što kažete u terapiji ostaje između nas.</p>
-      </details>
+  <!-- BLOG -->
+  <section class="blog-section" id="blog">
+    <div class="blog-header">
+      <p class="section-label">Blog</p>
+      <h2 class="section-title">Tekstovi</h2>
+      <p class="section-intro">Pišem o stvarima o kojima razgovaramo i u terapiji. O promjeni, strahu, odnosima i o tome
+        kako da budemo malo blaži prema sebi.</p>
     </div>
-  </div>
-</section>
+    <div class="blog-grid" id="blogGrid">
+      <p class="blog-status">Tekstovi se učitavaju.</p>
+    </div>
+  </section>
 
-<!-- KONTAKT -->
-<section class="contact-section" id="kontakt">
-  <div class="contact-inner">
-    <div class="contact-left">
-      <p class="section-label">Kontakt</p>
-      <h2 class="section-title">Hajde da razgovaramo</h2>
-      <p>Pišite mi preko forme i javiću vam se u roku od dva dana da dogovorimo prvi razgovor.</p>
-      <ul class="contact-info">
-        <li><span class="k">Email</span><a href="mailto:unutrasnjiprostor@gmail.com">unutrasnjiprostor@gmail.com</a></li>
-        <li><span class="k">Gdje</span><span>Podgorica i online</span></li>
-        <li><span class="k">Kada</span><span>Ponedjeljak do petak, od 9 do 19h</span></li>
-        <li><span class="k">Instagram</span><a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank" rel="noopener">@unutrasnji_prostor</a></li>
-      </ul>
+  <!-- O MENI -->
+  <section id="o-meni">
+    <div class="about-section">
+      <div class="about-visual">
+        <div class="about-circle">Ja</div>
+        <div class="about-quote">
+          <p>„Tišina je ponekad najglasniji odgovor koji možemo dati sebi.“</p>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-label">O meni</p>
+        <h2 class="section-title">Zdravo, ja sam Jovana</h2>
+        <p>U terapiji mi je najvažnije da se osjećate sigurno. Ne žurimo i ne sudimo. Zajedno gledamo ono što vas muči i
+          tražimo odakle dolazi.</p>
+        <p>Radim sa odraslima. Najčešće mi dolaze ljudi koji se bore sa anksioznošću, tugom, problemima u odnosima,
+          iscrpljenošću od posla, ili jednostavno osjećaju da su negdje zapeli.</p>
+        <p>Radim integrativnim psihodinamskim pristupom. Seanse traju 50 minuta i održavaju se uživo u Podgorici ili
+          online.</p>
+        <ul class="about-tags">
+          <li>Anksioznost</li>
+          <li>Depresija</li>
+          <li>Odnosi</li>
+          <li>Trauma</li>
+          <li>Samopoštovanje</li>
+          <li>Burnout</li>
+          <li>Lični rast</li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <form class="contact-form" id="contactForm" name="kontakt" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
-        <input type="hidden" name="form-name" value="kontakt" />
-        <div class="form-row">
-          <div class="form-group">
-            <label for="f-ime">Ime</label>
-            <input id="f-ime" type="text" name="ime" placeholder="Vaše ime" required />
+  </section>
+
+  <!-- USLUGE -->
+  <section class="services" id="usluge">
+    <div class="services-inner">
+      <p class="section-label">Usluge</p>
+      <h2 class="section-title">Kako možemo da radimo</h2>
+      <div class="svc-grid">
+        <div class="svc">
+          <h3>Individualna psihoterapija</h3>
+          <p>Redovni susreti jednom sedmično, uživo u Podgorici. Prostor da polako i dublje razumijete sebe.</p>
+        </div>
+        <div class="svc">
+          <h3>Online terapija</h3>
+          <p>Isti rad, samo preko video poziva. Pogodno ako ste u Crnoj Gori ili bilo gdje drugo.</p>
+        </div>
+        <div class="svc">
+          <h3>Savjetovanje</h3>
+          <p>Kraći rad kada prolazite kroz neku promjenu, stres ili tešku odluku i treba vam neko da razmišlja sa vama.
+          </p>
+        </div>
+      </div>
+      <p class="svc-note">Ako tražite psihoterapeuta u Podgorici, ili vam treba online psihoterapija bilo gdje u Crnoj
+        Gori, pišite mi pa da dogovorimo prvi razgovor.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="faq-inner">
+      <p class="section-label">Pitanja</p>
+      <h2 class="section-title">Ono što ljudi najčešće pitaju</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Kako izgleda prvi razgovor?</summary>
+          <p>Upoznamo se, kažete mi šta vas dovodi i zajedno vidimo da li vam ovakav rad odgovara. Nemate nikakvu
+            obavezu da nastavite.</p>
+        </details>
+        <details>
+          <summary>Da li radite online?</summary>
+          <p>Da. Online radim sa ljudima iz cijele Crne Gore. Treba vam samo mirno mjesto i internet.</p>
+        </details>
+        <details>
+          <summary>Koliko traje seansa?</summary>
+          <p>Seansa traje 50 minuta. Najčešće se viđamo jednom sedmično, a ritam možemo prilagoditi vama.</p>
+        </details>
+        <details>
+          <summary>Sa čim mogu da vam se obratim?</summary>
+          <p>Sa anksioznošću, depresijom, burnoutom, traumom, niskim samopoštovanjem, problemima u vezi ili porodici, i
+            svim većim životnim promjenama. Ako niste sigurni da li je vaša tema za terapiju, pišite mi. Vjerovatno
+            jeste.</p>
+        </details>
+        <details>
+          <summary>Da li je terapija povjerljiva?</summary>
+          <p>Jeste. Sve što kažete u terapiji ostaje između nas.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="contact-section" id="kontakt">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <p class="section-label">Kontakt</p>
+        <h2 class="section-title">Hajde da razgovaramo</h2>
+        <p>Pišite mi preko forme i javiću vam se u roku od dva dana da dogovorimo prvi razgovor.</p>
+        <ul class="contact-info">
+          <li><span class="k">Email</span><a href="mailto:unutrasnjiprostor@gmail.com">unutrasnjiprostor@gmail.com</a>
+          </li>
+          <li><span class="k">Gdje</span><span>Podgorica i online</span></li>
+          <li><span class="k">Kada</span><span>Ponedjeljak do petak, od 9 do 19h</span></li>
+          <li><span class="k">Instagram</span><a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank"
+              rel="noopener">@unutrasnji_prostor</a></li>
+        </ul>
+      </div>
+      <div>
+        <form class="contact-form" id="contactForm" name="kontakt" method="POST" data-netlify="true"
+          onsubmit="handleSubmit(event)">
+          <input type="hidden" name="form-name" value="kontakt" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-ime">Ime</label>
+              <input id="f-ime" type="text" name="ime" placeholder="Vaše ime" required />
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email</label>
+              <input id="f-email" type="email" name="email" placeholder="vasa@email.com" required />
+            </div>
           </div>
           <div class="form-group">
-            <label for="f-email">Email</label>
-            <input id="f-email" type="email" name="email" placeholder="vasa@email.com" required />
+            <label for="f-tema">Tema razgovora</label>
+            <select id="f-tema" name="tema">
+              <option value="">Odaberite temu</option>
+              <option>Anksioznost i stres</option>
+              <option>Odnosi i veze</option>
+              <option>Trauma i gubitak</option>
+              <option>Lični rast</option>
+              <option>Burnout i posao</option>
+              <option>Nešto drugo</option>
+            </select>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="f-tema">Tema razgovora</label>
-          <select id="f-tema" name="tema">
-            <option value="">Odaberite temu</option>
-            <option>Anksioznost i stres</option>
-            <option>Odnosi i veze</option>
-            <option>Trauma i gubitak</option>
-            <option>Lični rast</option>
-            <option>Burnout i posao</option>
-            <option>Nešto drugo</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="f-poruka">Poruka</label>
-          <textarea id="f-poruka" name="poruka" placeholder="Ako želite, napišite ukratko šta vas dovodi."></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Pošaljite poruku</button>
-        <p class="form-msg" id="formMsg" role="status"></p>
-      </form>
+          <div class="form-group">
+            <label for="f-poruka">Poruka</label>
+            <textarea id="f-poruka" name="poruka" placeholder="Ako želite, napišite ukratko šta vas dovodi."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Pošaljite poruku</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Netlify form detection (ne brisati) -->
+  <form name="kontakt" data-netlify="true" hidden>
+    <input type="text" name="ime" />
+    <input type="email" name="email" />
+    <select name="tema"></select>
+    <textarea name="poruka"></textarea>
+  </form>
+
+  <footer>
+    <span class="footer-logo">Psihoterapija Jovana Simoni</span>
+    <span>© <span id="year"></span> Sva prava zadržana</span>
+    <a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank" rel="noopener">Instagram</a>
+  </footer>
+
+  <!-- BLOG MODAL -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <button class="modal-close" id="modalClose" aria-label="Zatvori">×</button>
+      <img class="modal-img" id="mImg" alt="" hidden />
+      <p class="modal-tag" id="mTag"></p>
+      <h2 class="modal-title" id="mTitle"></h2>
+      <p class="modal-meta" id="mMeta"></p>
+      <div class="modal-body" id="mBody"></div>
     </div>
   </div>
-</section>
 
-<!-- Netlify form detection (ne brisati) -->
-<form name="kontakt" data-netlify="true" hidden>
-  <input type="text" name="ime" />
-  <input type="email" name="email" />
-  <select name="tema"></select>
-  <textarea name="poruka"></textarea>
-</form>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const nav = document.getElementById('nav');
+    addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30), { passive: true });
 
-<footer>
-  <span class="footer-logo">Psihoterapija Jovana Simoni</span>
-  <span>© <span id="year"></span> Sva prava zadržana</span>
-  <a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank" rel="noopener">Instagram</a>
-</footer>
+    /* ---------- BLOG iz posts.json ---------- */
+    let posts = [];
+    const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-<!-- BLOG MODAL -->
-<div class="modal-overlay" id="modalOverlay" aria-hidden="true">
-  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-    <button class="modal-close" id="modalClose" aria-label="Zatvori">×</button>
-    <img class="modal-img" id="mImg" alt="" hidden />
-    <p class="modal-tag" id="mTag"></p>
-    <h2 class="modal-title" id="mTitle"></h2>
-    <p class="modal-meta" id="mMeta"></p>
-    <div class="modal-body" id="mBody"></div>
-  </div>
-</div>
+    // Iz "bg" polja izvuče ime slike, npr. url('blog1.jpg') daje blog1.jpg
+    function imageFrom(bg) {
+      const m = String(bg || '').match(/url\(\s*['"]?([^'")]+)['"]?\s*\)/);
+      return m ? m[1] : null;
+    }
+    // Paragrafi: prazan red (\n\n) pravi novi paragraf. Radi i stari zapis sa <p>.
+    function formatBody(body) {
+      body = String(body || '');
+      if (/<p[\s>]/i.test(body)) return body;
+      return body.split(/\n\s*\n/).filter(x => x.trim())
+        .map(x => '<p>' + esc(x.trim()).replace(/\n/g, '<br>') + '</p>').join('');
+    }
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  const nav = document.getElementById('nav');
-  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30), { passive: true });
-
-  /* ---------- BLOG iz posts.json ---------- */
-  let posts = [];
-  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
-
-  // Iz "bg" polja izvuče ime slike, npr. url('blog1.jpg') daje blog1.jpg
-  function imageFrom(bg) {
-    const m = String(bg || '').match(/url\(\s*['"]?([^'")]+)['"]?\s*\)/);
-    return m ? m[1] : null;
-  }
-  // Paragrafi: prazan red (\n\n) pravi novi paragraf. Radi i stari zapis sa <p>.
-  function formatBody(body) {
-    body = String(body || '');
-    if (/<p[\s>]/i.test(body)) return body;
-    return body.split(/\n\s*\n/).filter(x => x.trim())
-      .map(x => '<p>' + esc(x.trim()).replace(/\n/g, '<br>') + '</p>').join('');
-  }
-
-  fetch('posts.json', { cache: 'no-store' })
-    .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-    .then(data => {
-      posts = Array.isArray(data) ? data : [];
-      const grid = document.getElementById('blogGrid');
-      grid.innerHTML = '';
-      if (!posts.length) { grid.innerHTML = '<p class="blog-status">Uskoro novi tekstovi.</p>'; return; }
-      posts.forEach((p, i) => {
-        const img = p.image || imageFrom(p.bg);
-        const card = document.createElement('button');
-        card.type = 'button';
-        card.className = 'blog-card';
-        card.addEventListener('click', () => openModal(i));
-        card.innerHTML = `
+    fetch('posts.json', { cache: 'no-store' })
+      .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+      .then(data => {
+        posts = Array.isArray(data) ? data : [];
+        const grid = document.getElementById('blogGrid');
+        grid.innerHTML = '';
+        if (!posts.length) { grid.innerHTML = '<p class="blog-status">Uskoro novi tekstovi.</p>'; return; }
+        posts.forEach((p, i) => {
+          const img = p.image || imageFrom(p.bg);
+          const card = document.createElement('button');
+          card.type = 'button';
+          card.className = 'blog-card';
+          card.addEventListener('click', () => openModal(i));
+          card.innerHTML = `
           <div class="card-thumb" style="${img ? '' : 'background:' + esc(p.bg || '')}">
             ${img ? `<img src="${esc(img)}" alt="${esc(p.title)}" loading="lazy">` : `<span class="sym">${esc(p.symbol || '')}</span>`}
           </div>
@@ -489,191 +1365,192 @@
             <p class="card-excerpt">${esc(p.excerpt)}</p>
             <div class="card-meta"><span>${esc(p.date)}</span><span class="read">${esc(p.readTime)}</span></div>
           </div>`;
-        grid.appendChild(card);
+          grid.appendChild(card);
+        });
+      })
+      .catch(() => {
+        document.getElementById('blogGrid').innerHTML = '<p class="blog-status">Tekstovi se nisu učitali. Osvježite stranicu.</p>';
       });
-    })
-    .catch(() => {
-      document.getElementById('blogGrid').innerHTML = '<p class="blog-status">Tekstovi se nisu učitali. Osvježite stranicu.</p>';
-    });
 
-  /* ---------- MODAL ---------- */
-  const overlay = document.getElementById('modalOverlay');
-  let lastFocus = null;
-  function openModal(i) {
-    const p = posts[i];
-    const img = p.image || imageFrom(p.bg);
-    const mImg = document.getElementById('mImg');
-    if (img) { mImg.src = img; mImg.alt = p.title || ''; mImg.hidden = false; } else { mImg.hidden = true; }
-    document.getElementById('mTag').textContent = p.tag || '';
-    document.getElementById('mTitle').textContent = p.title || '';
-    document.getElementById('mMeta').textContent = [p.date, p.readTime].filter(Boolean).join(', ');
-    document.getElementById('mBody').innerHTML = formatBody(p.body);
-    lastFocus = document.activeElement;
-    overlay.classList.add('open');
-    overlay.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-    document.getElementById('modalClose').focus();
-  }
-  function closeModal() {
-    overlay.classList.remove('open');
-    overlay.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    if (lastFocus) lastFocus.focus();
-  }
-  document.getElementById('modalClose').addEventListener('click', closeModal);
-  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
-  addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-  /* ---------- KONTAKT FORMA ---------- */
-  function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.target;
-    const btn = form.querySelector('.submit-btn');
-    const msg = document.getElementById('formMsg');
-    btn.disabled = true;
-    btn.textContent = 'Šaljem';
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(form)).toString()
-    })
-    .then(r => {
-      if (!r.ok) throw new Error();
-      form.reset();
-      msg.className = 'form-msg';
-      msg.textContent = 'Hvala, poruka je poslata. Javiću vam se uskoro.';
-      msg.style.display = 'block';
-      btn.style.display = 'none';
-    })
-    .catch(() => {
-      msg.className = 'form-msg error';
-      msg.textContent = 'Poruka nije poslata. Provjerite internet i pokušajte ponovo, ili mi pišite na unutrasnjiprostor@gmail.com.';
-      msg.style.display = 'block';
-      btn.disabled = false;
-      btn.textContent = 'Pošaljite poruku';
-    });
-  }
-
-  /* ---------- 3D GLAVNA SLIKA (foto.jpg) ---------- */
-  (function () {
-    const canvas = document.getElementById('hero3d');
-    const fallback = document.getElementById('heroFallback');
-    const useFallback = () => { canvas.style.display = 'none'; fallback.style.display = 'block'; };
-    if (!window.THREE) return useFallback();
-
-    let renderer;
-    try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true }); }
-    catch (e) { return useFallback(); }
-    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-    renderer.outputEncoding = THREE.sRGBEncoding;
-
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 100);
-    camera.position.set(0, 0, 9);
-
-    scene.add(new THREE.AmbientLight(0xffffff, 0.75));
-    const key = new THREE.DirectionalLight(0xffffff, 0.6);
-    key.position.set(3, 4, 5);
-    scene.add(key);
-
-    const R = 1.75, T = 0.16;
-    const medal = new THREE.Group();
-
-    // ivica medaljona
-    const edgeGeo = new THREE.CylinderGeometry(R, R, T, 96, 1, true);
-    edgeGeo.rotateX(Math.PI / 2);
-    medal.add(new THREE.Mesh(edgeGeo, new THREE.MeshStandardMaterial({ color: 0xC49A7A, roughness: 0.55, metalness: 0.15 })));
-
-    // poleđina
-    const back = new THREE.Mesh(new THREE.CircleGeometry(R, 96), new THREE.MeshStandardMaterial({ color: 0xE8D5C0, roughness: 0.8 }));
-    back.position.z = -T / 2;
-    back.rotation.y = Math.PI;
-    medal.add(back);
-
-    // tanki prsten na prednjoj strani
-    const rim = new THREE.Mesh(new THREE.RingGeometry(R - 0.035, R + 0.002, 128), new THREE.MeshBasicMaterial({ color: 0xC49A7A }));
-    rim.position.z = T / 2 + 0.002;
-    medal.add(rim);
-
-    scene.add(medal);
-
-    // orbita sa tačkicama oko slike
-    const orbit = new THREE.Group();
-    const pts = [];
-    for (let i = 0; i <= 128; i++) {
-      const a = (i / 128) * Math.PI * 2;
-      pts.push(new THREE.Vector3(Math.cos(a) * 2.35, Math.sin(a) * 2.35, 0));
+    /* ---------- MODAL ---------- */
+    const overlay = document.getElementById('modalOverlay');
+    let lastFocus = null;
+    function openModal(i) {
+      const p = posts[i];
+      const img = p.image || imageFrom(p.bg);
+      const mImg = document.getElementById('mImg');
+      if (img) { mImg.src = img; mImg.alt = p.title || ''; mImg.hidden = false; } else { mImg.hidden = true; }
+      document.getElementById('mTag').textContent = p.tag || '';
+      document.getElementById('mTitle').textContent = p.title || '';
+      document.getElementById('mMeta').textContent = [p.date, p.readTime].filter(Boolean).join(', ');
+      document.getElementById('mBody').innerHTML = formatBody(p.body);
+      lastFocus = document.activeElement;
+      overlay.classList.add('open');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('modalClose').focus();
     }
-    const ring = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),
-      new THREE.LineDashedMaterial({ color: 0xC49A7A, dashSize: 0.08, gapSize: 0.14, transparent: true, opacity: 0.6 }));
-    ring.computeLineDistances();
-    orbit.add(ring);
-    const dots = [];
-    [[0xC49A7A, 0.07, 0], [0x8A9E8C, 0.06, 2.1], [0xC49A7A, 0.045, 3.6], [0x8A9E8C, 0.05, 5.0]].forEach(([c, r, a]) => {
-      const d = new THREE.Mesh(new THREE.SphereGeometry(r, 20, 16), new THREE.MeshStandardMaterial({ color: c, roughness: 0.5 }));
-      d.userData.a = a;
-      orbit.add(d);
-      dots.push(d);
-    });
-    orbit.rotation.x = 1.15;
-    orbit.rotation.y = -0.25;
-    scene.add(orbit);
-
-    // prednja strana: vaša slika
-    new THREE.TextureLoader().load('foto.jpg', tex => {
-      tex.encoding = THREE.sRGBEncoding;
-      tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
-      const w = tex.image.width, h = tex.image.height;
-      if (w > h) { tex.repeat.set(h / w, 1); tex.offset.set((1 - h / w) / 2, 0); }
-      else if (h > w) { tex.repeat.set(1, w / h); tex.offset.set(0, (1 - w / h) / 2); }
-      const front = new THREE.Mesh(new THREE.CircleGeometry(R, 96), new THREE.MeshBasicMaterial({ map: tex }));
-      front.position.z = T / 2 + 0.001;
-      medal.add(front);
-    }, undefined, useFallback);
-
-    function resize() {
-      const w = canvas.clientWidth, h = canvas.clientHeight;
-      if (!w || !h) return;
-      renderer.setSize(w, h, false);
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
+    function closeModal() {
+      overlay.classList.remove('open');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus();
     }
-    new ResizeObserver(resize).observe(canvas);
-    resize();
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-    // miš i prevlačenje
-    let tx = 0, ty = 0, spin = 0, dragX = null;
-    canvas.addEventListener('pointermove', e => {
-      const r = canvas.getBoundingClientRect();
-      tx = ((e.clientX - r.left) / r.width - 0.5) * 0.7;
-      ty = ((e.clientY - r.top) / r.height - 0.5) * 0.5;
-      if (dragX !== null) { spin += (e.clientX - dragX) * 0.012; dragX = e.clientX; }
-    });
-    canvas.addEventListener('pointerdown', e => { dragX = e.clientX; canvas.setPointerCapture(e.pointerId); });
-    canvas.addEventListener('pointerup', () => { dragX = null; });
-    canvas.addEventListener('pointerleave', () => { tx = 0; ty = 0; });
+    /* ---------- KONTAKT FORMA ---------- */
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('.submit-btn');
+      const msg = document.getElementById('formMsg');
+      btn.disabled = true;
+      btn.textContent = 'Šaljem';
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      })
+        .then(r => {
+          if (!r.ok) throw new Error();
+          form.reset();
+          msg.className = 'form-msg';
+          msg.textContent = 'Hvala, poruka je poslata. Javiću vam se uskoro.';
+          msg.style.display = 'block';
+          btn.style.display = 'none';
+        })
+        .catch(() => {
+          msg.className = 'form-msg error';
+          msg.textContent = 'Poruka nije poslata. Provjerite internet i pokušajte ponovo, ili mi pišite na unutrasnjiprostor@gmail.com.';
+          msg.style.display = 'block';
+          btn.disabled = false;
+          btn.textContent = 'Pošaljite poruku';
+        });
+    }
 
-    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let visible = true;
-    new IntersectionObserver(([en]) => { visible = en.isIntersecting; }).observe(canvas);
+    /* ---------- 3D GLAVNA SLIKA (foto.jpg) ---------- */
+    (function () {
+      const canvas = document.getElementById('hero3d');
+      const fallback = document.getElementById('heroFallback');
+      const useFallback = () => { canvas.style.display = 'none'; fallback.style.display = 'block'; };
+      if (!window.THREE) return useFallback();
 
-    const clock = new THREE.Clock();
-    (function frame() {
-      requestAnimationFrame(frame);
-      if (!visible) return;
-      const t = reduced ? 0 : clock.getElapsedTime();
-      if (dragX === null) spin *= 0.97; // poslije okretanja se vrati
-      medal.rotation.y += ((Math.sin(t * 0.5) * 0.35 + tx + spin) - medal.rotation.y) * 0.07;
-      medal.rotation.x += ((Math.sin(t * 0.35) * 0.08 + ty) - medal.rotation.x) * 0.07;
-      medal.position.y = Math.sin(t * 1.2) * 0.12;
-      dots.forEach((d, i) => {
-        const a = d.userData.a + t * (0.25 + i * 0.04);
-        d.position.set(Math.cos(a) * 2.35, Math.sin(a) * 2.35, 0);
+      let renderer;
+      try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true }); }
+      catch (e) { return useFallback(); }
+      renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+      renderer.outputEncoding = THREE.sRGBEncoding;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 100);
+      camera.position.set(0, 0, 9);
+
+      scene.add(new THREE.AmbientLight(0xffffff, 0.75));
+      const key = new THREE.DirectionalLight(0xffffff, 0.6);
+      key.position.set(3, 4, 5);
+      scene.add(key);
+
+      const R = 1.75, T = 0.16;
+      const medal = new THREE.Group();
+
+      // ivica medaljona
+      const edgeGeo = new THREE.CylinderGeometry(R, R, T, 96, 1, true);
+      edgeGeo.rotateX(Math.PI / 2);
+      medal.add(new THREE.Mesh(edgeGeo, new THREE.MeshStandardMaterial({ color: 0xC49A7A, roughness: 0.55, metalness: 0.15 })));
+
+      // poleđina
+      const back = new THREE.Mesh(new THREE.CircleGeometry(R, 96), new THREE.MeshStandardMaterial({ color: 0xE8D5C0, roughness: 0.8 }));
+      back.position.z = -T / 2;
+      back.rotation.y = Math.PI;
+      medal.add(back);
+
+      // tanki prsten na prednjoj strani
+      const rim = new THREE.Mesh(new THREE.RingGeometry(R - 0.035, R + 0.002, 128), new THREE.MeshBasicMaterial({ color: 0xC49A7A }));
+      rim.position.z = T / 2 + 0.002;
+      medal.add(rim);
+
+      scene.add(medal);
+
+      // orbita sa tačkicama oko slike
+      const orbit = new THREE.Group();
+      const pts = [];
+      for (let i = 0; i <= 128; i++) {
+        const a = (i / 128) * Math.PI * 2;
+        pts.push(new THREE.Vector3(Math.cos(a) * 2.35, Math.sin(a) * 2.35, 0));
+      }
+      const ring = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),
+        new THREE.LineDashedMaterial({ color: 0xC49A7A, dashSize: 0.08, gapSize: 0.14, transparent: true, opacity: 0.6 }));
+      ring.computeLineDistances();
+      orbit.add(ring);
+      const dots = [];
+      [[0xC49A7A, 0.07, 0], [0x8A9E8C, 0.06, 2.1], [0xC49A7A, 0.045, 3.6], [0x8A9E8C, 0.05, 5.0]].forEach(([c, r, a]) => {
+        const d = new THREE.Mesh(new THREE.SphereGeometry(r, 20, 16), new THREE.MeshStandardMaterial({ color: c, roughness: 0.5 }));
+        d.userData.a = a;
+        orbit.add(d);
+        dots.push(d);
       });
-      orbit.position.y = medal.position.y;
-      renderer.render(scene, camera);
+      orbit.rotation.x = 1.15;
+      orbit.rotation.y = -0.25;
+      scene.add(orbit);
+
+      // prednja strana: vaša slika
+      new THREE.TextureLoader().load('foto.jpg', tex => {
+        tex.encoding = THREE.sRGBEncoding;
+        tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+        const w = tex.image.width, h = tex.image.height;
+        if (w > h) { tex.repeat.set(h / w, 1); tex.offset.set((1 - h / w) / 2, 0); }
+        else if (h > w) { tex.repeat.set(1, w / h); tex.offset.set(0, (1 - w / h) / 2); }
+        const front = new THREE.Mesh(new THREE.CircleGeometry(R, 96), new THREE.MeshBasicMaterial({ map: tex }));
+        front.position.z = T / 2 + 0.001;
+        medal.add(front);
+      }, undefined, useFallback);
+
+      function resize() {
+        const w = canvas.clientWidth, h = canvas.clientHeight;
+        if (!w || !h) return;
+        renderer.setSize(w, h, false);
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+      }
+      new ResizeObserver(resize).observe(canvas);
+      resize();
+
+      // miš i prevlačenje
+      let tx = 0, ty = 0, spin = 0, dragX = null;
+      canvas.addEventListener('pointermove', e => {
+        const r = canvas.getBoundingClientRect();
+        tx = ((e.clientX - r.left) / r.width - 0.5) * 0.7;
+        ty = ((e.clientY - r.top) / r.height - 0.5) * 0.5;
+        if (dragX !== null) { spin += (e.clientX - dragX) * 0.012; dragX = e.clientX; }
+      });
+      canvas.addEventListener('pointerdown', e => { dragX = e.clientX; canvas.setPointerCapture(e.pointerId); });
+      canvas.addEventListener('pointerup', () => { dragX = null; });
+      canvas.addEventListener('pointerleave', () => { tx = 0; ty = 0; });
+
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let visible = true;
+      new IntersectionObserver(([en]) => { visible = en.isIntersecting; }).observe(canvas);
+
+      const clock = new THREE.Clock();
+      (function frame() {
+        requestAnimationFrame(frame);
+        if (!visible) return;
+        const t = reduced ? 0 : clock.getElapsedTime();
+        if (dragX === null) spin *= 0.97; // poslije okretanja se vrati
+        medal.rotation.y += ((Math.sin(t * 0.5) * 0.35 + tx + spin) - medal.rotation.y) * 0.07;
+        medal.rotation.x += ((Math.sin(t * 0.35) * 0.08 + ty) - medal.rotation.x) * 0.07;
+        medal.position.y = Math.sin(t * 1.2) * 0.12;
+        dots.forEach((d, i) => {
+          const a = d.userData.a + t * (0.25 + i * 0.04);
+          d.position.set(Math.cos(a) * 2.35, Math.sin(a) * 2.35, 0);
+        });
+        orbit.position.y = medal.position.y;
+        renderer.render(scene, camera);
+      })();
     })();
-  })();
-</script>
+  </script>
 </body>
+
 </html>
