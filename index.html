@@ -1358,153 +1358,135 @@
       </div>
     </section>
 
-    /* ---------- STRELICE ZA BLOG ---------- */
-    (function () {
-    const grid = document.getElementById('blogGrid');
-    const prev = document.getElementById('blogPrev');
-    const next = document.getElementById('blogNext');
-    if (!grid || !prev || !next) return;
-    const update = () => {
-    const max = grid.scrollWidth - grid.clientWidth;
-    prev.disabled = grid.scrollLeft <= 2; next.disabled=grid.scrollLeft>= max - 2;
-      };
-      prev.addEventListener('click', () => grid.scrollBy({ left: -grid.clientWidth, behavior: 'smooth' }));
-      next.addEventListener('click', () => grid.scrollBy({ left: grid.clientWidth, behavior: 'smooth' }));
-      grid.addEventListener('scroll', update, { passive: true });
-      addEventListener('resize', update);
-      new MutationObserver(update).observe(grid, { childList: true });
-      update();
-      })();
-      <!-- KONTAKT -->
+    <!-- KONTAKT -->
 
-      <section class="contact-section" id="kontakt">
-        <div class="contact-inner">
-          <div class="contact-left">
-            <p class="section-label">Kontakt</p>
-            <h2 class="section-title">Hajde da razgovaramo</h2>
-            <p>Pišite mi preko forme ili emaila i javiću vam se da dogovorimo prvi razgovor.</p>
-            <ul class="contact-info">
-              <li><span class="k">Email</span><a
-                  href="mailto:unutrasnjiprostor@gmail.com">unutrasnjiprostor@gmail.com</a>
-              </li>
-              <li><span class="k">Gdje</span><span>Podgorica i online</span></li>
-              <li><span class="k">Kada</span><span>Ponedjeljak do petak, od 9 do 19h</span></li>
-              <li><span class="k">Instagram</span><a href="https://www.instagram.com/unutrasnji_prostor/"
-                  target="_blank" rel="noopener">@unutrasnji_prostor</a></li>
-            </ul>
-          </div>
-          <div>
-            <form class="contact-form" id="contactForm" name="kontakt" method="POST" data-netlify="true"
-              onsubmit="handleSubmit(event)">
-              <input type="hidden" name="form-name" value="kontakt" />
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="f-ime">Ime</label>
-                  <input id="f-ime" type="text" name="ime" placeholder="Vaše ime" required />
-                </div>
-                <div class="form-group">
-                  <label for="f-email">Email</label>
-                  <input id="f-email" type="email" name="email" placeholder="vasa@email.com" required />
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="f-tema">Tema razgovora</label>
-                <select id="f-tema" name="tema">
-                  <option value="">Odaberite temu</option>
-                  <option>Anksioznost i stres</option>
-                  <option>Odnosi i veze</option>
-                  <option>Trauma i gubitak</option>
-                  <option>Lični rast</option>
-                  <option>Burnout i posao</option>
-                  <option>Nešto drugo</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="f-poruka">Poruka</label>
-                <textarea id="f-poruka" name="poruka"
-                  placeholder="Ako želite, napišite ukratko šta vas dovodi."></textarea>
-              </div>
-              <button type="submit" class="submit-btn">Pošaljite poruku</button>
-              <p class="form-msg" id="formMsg" role="status"></p>
-            </form>
-          </div>
+    <section class="contact-section" id="kontakt">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <p class="section-label">Kontakt</p>
+          <h2 class="section-title">Hajde da razgovaramo</h2>
+          <p>Pišite mi preko forme ili emaila i javiću vam se da dogovorimo prvi razgovor.</p>
+          <ul class="contact-info">
+            <li><span class="k">Email</span><a href="mailto:unutrasnjiprostor@gmail.com">unutrasnjiprostor@gmail.com</a>
+            </li>
+            <li><span class="k">Gdje</span><span>Podgorica i online</span></li>
+            <li><span class="k">Kada</span><span>Ponedjeljak do petak, od 9 do 19h</span></li>
+            <li><span class="k">Instagram</span><a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank"
+                rel="noopener">@unutrasnji_prostor</a></li>
+          </ul>
         </div>
-      </section>
-
-      <!-- Netlify form detection (ne brisati) -->
-      <form name="kontakt" data-netlify="true" hidden>
-        <input type="text" name="ime" />
-        <input type="email" name="email" />
-        <select name="tema"></select>
-        <textarea name="poruka"></textarea>
-      </form>
-
-      <footer>
-        <span class="footer-logo">Psihoterapija Jovana Simoni</span>
-        <span>© <span id="year"></span> Sva prava zadržana</span>
-        <a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank" rel="noopener">Instagram</a>
-      </footer>
-
-      <!-- BLOG MODAL -->
-      <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
-        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-          <button class="modal-close" id="modalClose" aria-label="Zatvori">×</button>
-          <img class="modal-img" id="mImg" alt="" hidden />
-          <p class="modal-tag" id="mTag"></p>
-          <h2 class="modal-title" id="mTitle"></h2>
-          <p class="modal-meta" id="mMeta"></p>
-          <div class="modal-body" id="mBody"></div>
+        <div>
+          <form class="contact-form" id="contactForm" name="kontakt" method="POST" data-netlify="true"
+            onsubmit="handleSubmit(event)">
+            <input type="hidden" name="form-name" value="kontakt" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-ime">Ime</label>
+                <input id="f-ime" type="text" name="ime" placeholder="Vaše ime" required />
+              </div>
+              <div class="form-group">
+                <label for="f-email">Email</label>
+                <input id="f-email" type="email" name="email" placeholder="vasa@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-tema">Tema razgovora</label>
+              <select id="f-tema" name="tema">
+                <option value="">Odaberite temu</option>
+                <option>Anksioznost i stres</option>
+                <option>Odnosi i veze</option>
+                <option>Trauma i gubitak</option>
+                <option>Lični rast</option>
+                <option>Burnout i posao</option>
+                <option>Nešto drugo</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="f-poruka">Poruka</label>
+              <textarea id="f-poruka" name="poruka"
+                placeholder="Ako želite, napišite ukratko šta vas dovodi."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Pošaljite poruku</button>
+            <p class="form-msg" id="formMsg" role="status"></p>
+          </form>
         </div>
       </div>
+    </section>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-      <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        const nav = document.getElementById('nav');
-        addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30), { passive: true });
+    <!-- Netlify form detection (ne brisati) -->
+    <form name="kontakt" data-netlify="true" hidden>
+      <input type="text" name="ime" />
+      <input type="email" name="email" />
+      <select name="tema"></select>
+      <textarea name="poruka"></textarea>
+    </form>
 
-        /* ---------- BLOG iz posts.json ---------- */
-        let posts = [];
-        function postSlugs(list) {
-          const map = { 'š': 's', 'đ': 'dj', 'č': 'c', 'ć': 'c', 'ž': 'z', 'Š': 's', 'Đ': 'dj', 'Č': 'c', 'Ć': 'c', 'Ž': 'z' };
-          const slugify = s => String(s || '').replace(/[šđčćžŠĐČĆŽ]/g, c => map[c]).toLowerCase()
-            .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'tekst';
-          const used = {};
-          return list.map(p => {
-            let s = p.slug ? slugify(p.slug) : slugify(p.title);
-            if (used[s]) { used[s] += 1; s = s + '-' + used[s]; } else { used[s] = 1; }
-            return s;
-          });
-        }
-        const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    <footer>
+      <span class="footer-logo">Psihoterapija Jovana Simoni</span>
+      <span>© <span id="year"></span> Sva prava zadržana</span>
+      <a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank" rel="noopener">Instagram</a>
+    </footer>
 
-        // Iz "bg" polja izvuče ime slike, npr. url('blog1.jpg') daje blog1.jpg
-        function imageFrom(bg) {
-          const m = String(bg || '').match(/url\(\s*['"]?([^'")]+)['"]?\s*\)/);
-          return m ? m[1] : null;
-        }
-        // Paragrafi: prazan red (\n\n) pravi novi paragraf. Radi i stari zapis sa <p>.
-        function formatBody(body) {
-          body = String(body || '');
-          if (/<p[\s>]/i.test(body)) return body;
-          return body.split(/\n\s*\n/).filter(x => x.trim())
-            .map(x => '<p>' + esc(x.trim()).replace(/\n/g, '<br>') + '</p>').join('');
-        }
+    <!-- BLOG MODAL -->
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+        <button class="modal-close" id="modalClose" aria-label="Zatvori">×</button>
+        <img class="modal-img" id="mImg" alt="" hidden />
+        <p class="modal-tag" id="mTag"></p>
+        <h2 class="modal-title" id="mTitle"></h2>
+        <p class="modal-meta" id="mMeta"></p>
+        <div class="modal-body" id="mBody"></div>
+      </div>
+    </div>
 
-        fetch('posts.json', { cache: 'no-store' })
-          .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-          .then(data => {
-            posts = Array.isArray(data) ? data : [];
-            const grid = document.getElementById('blogGrid');
-            grid.innerHTML = '';
-            if (!posts.length) { grid.innerHTML = '<p class="blog-status">Uskoro novi tekstovi.</p>'; return; }
-            posts.forEach((p, i) => {
-              const img = p.image || imageFrom(p.bg);
-              const card = document.createElement('a');
-              card.className = 'blog-card';
-              card.href = '/blog/' + postSlugs(posts)[i] + '/';
-              card.style.textDecoration = 'none';
-              card.innerHTML = `
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const nav = document.getElementById('nav');
+      addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30), { passive: true });
+
+      /* ---------- BLOG iz posts.json ---------- */
+      let posts = [];
+      function postSlugs(list) {
+        const map = { 'š': 's', 'đ': 'dj', 'č': 'c', 'ć': 'c', 'ž': 'z', 'Š': 's', 'Đ': 'dj', 'Č': 'c', 'Ć': 'c', 'Ž': 'z' };
+        const slugify = s => String(s || '').replace(/[šđčćžŠĐČĆŽ]/g, c => map[c]).toLowerCase()
+          .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'tekst';
+        const used = {};
+        return list.map(p => {
+          let s = p.slug ? slugify(p.slug) : slugify(p.title);
+          if (used[s]) { used[s] += 1; s = s + '-' + used[s]; } else { used[s] = 1; }
+          return s;
+        });
+      }
+      const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+      // Iz "bg" polja izvuče ime slike, npr. url('blog1.jpg') daje blog1.jpg
+      function imageFrom(bg) {
+        const m = String(bg || '').match(/url\(\s*['"]?([^'")]+)['"]?\s*\)/);
+        return m ? m[1] : null;
+      }
+      // Paragrafi: prazan red (\n\n) pravi novi paragraf. Radi i stari zapis sa <p>.
+      function formatBody(body) {
+        body = String(body || '');
+        if (/<p[\s>]/i.test(body)) return body;
+        return body.split(/\n\s*\n/).filter(x => x.trim())
+          .map(x => '<p>' + esc(x.trim()).replace(/\n/g, '<br>') + '</p>').join('');
+      }
+
+      fetch('posts.json', { cache: 'no-store' })
+        .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+        .then(data => {
+          posts = Array.isArray(data) ? data : [];
+          const grid = document.getElementById('blogGrid');
+          grid.innerHTML = '';
+          if (!posts.length) { grid.innerHTML = '<p class="blog-status">Uskoro novi tekstovi.</p>'; return; }
+          posts.forEach((p, i) => {
+            const img = p.image || imageFrom(p.bg);
+            const card = document.createElement('a');
+            card.className = 'blog-card';
+            card.href = '/blog/' + postSlugs(posts)[i] + '/';
+            card.style.textDecoration = 'none';
+            card.innerHTML = `
           <div class="card-thumb" style="${img ? '' : 'background:' + esc(p.bg || '')}">
             ${img ? `<img src="${esc(img)}" alt="${esc(p.title)}" loading="lazy">` : `<span class="sym">${esc(p.symbol || '')}</span>`}
           </div>
@@ -1514,192 +1496,209 @@
             <p class="card-excerpt">${esc(p.excerpt)}</p>
             <div class="card-meta"><span>${esc(p.date)}</span><span class="read">${esc(p.readTime)}</span></div>
           </div>`;
-              grid.appendChild(card);
-            });
+            grid.appendChild(card);
+          });
+        })
+        .catch(() => {
+          document.getElementById('blogGrid').innerHTML = '<p class="blog-status">Tekstovi se nisu učitali. Osvježite stranicu.</p>';
+        });
+
+      /* ---------- MODAL ---------- */
+      const overlay = document.getElementById('modalOverlay');
+      let lastFocus = null;
+      function openModal(i) {
+        const p = posts[i];
+        const img = p.image || imageFrom(p.bg);
+        const mImg = document.getElementById('mImg');
+        if (img) { mImg.src = img; mImg.alt = p.title || ''; mImg.hidden = false; } else { mImg.hidden = true; }
+        document.getElementById('mTag').textContent = p.tag || '';
+        document.getElementById('mTitle').textContent = p.title || '';
+        document.getElementById('mMeta').textContent = [p.date, p.readTime].filter(Boolean).join(', ');
+        document.getElementById('mBody').innerHTML = formatBody(p.body);
+        lastFocus = document.activeElement;
+        overlay.classList.add('open');
+        overlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        document.getElementById('modalClose').focus();
+      }
+      function closeModal() {
+        overlay.classList.remove('open');
+        overlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        if (lastFocus) lastFocus.focus();
+      }
+      document.getElementById('modalClose').addEventListener('click', closeModal);
+      overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+      addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+      /* ---------- STRELICE ZA BLOG ---------- */
+      (function () {
+        const grid = document.getElementById('blogGrid');
+        const prev = document.getElementById('blogPrev');
+        const next = document.getElementById('blogNext');
+        if (!grid || !prev || !next) return;
+        const update = () => {
+          const max = grid.scrollWidth - grid.clientWidth;
+          prev.disabled = grid.scrollLeft <= 2;
+          next.disabled = grid.scrollLeft >= max - 2;
+        };
+        prev.addEventListener('click', () => grid.scrollBy({ left: -grid.clientWidth, behavior: 'smooth' }));
+        next.addEventListener('click', () => grid.scrollBy({ left: grid.clientWidth, behavior: 'smooth' }));
+        grid.addEventListener('scroll', update, { passive: true });
+        addEventListener('resize', update);
+        new MutationObserver(update).observe(grid, { childList: true });
+        update();
+      })();
+      /* ---------- KONTAKT FORMA ---------- */
+      function handleSubmit(e) {
+        e.preventDefault();
+        const form = e.target;
+        const btn = form.querySelector('.submit-btn');
+        const msg = document.getElementById('formMsg');
+        btn.disabled = true;
+        btn.textContent = 'Šaljem';
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        })
+          .then(r => {
+            if (!r.ok) throw new Error();
+            form.reset();
+            msg.className = 'form-msg';
+            msg.textContent = 'Hvala, poruka je poslata. Javiću vam se uskoro.';
+            msg.style.display = 'block';
+            btn.style.display = 'none';
           })
           .catch(() => {
-            document.getElementById('blogGrid').innerHTML = '<p class="blog-status">Tekstovi se nisu učitali. Osvježite stranicu.</p>';
+            msg.className = 'form-msg error';
+            msg.textContent = 'Poruka nije poslata. Provjerite internet i pokušajte ponovo, ili mi pišite na unutrasnjiprostor@gmail.com.';
+            msg.style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = 'Pošaljite poruku';
           });
+      }
 
-        /* ---------- MODAL ---------- */
-        const overlay = document.getElementById('modalOverlay');
-        let lastFocus = null;
-        function openModal(i) {
-          const p = posts[i];
-          const img = p.image || imageFrom(p.bg);
-          const mImg = document.getElementById('mImg');
-          if (img) { mImg.src = img; mImg.alt = p.title || ''; mImg.hidden = false; } else { mImg.hidden = true; }
-          document.getElementById('mTag').textContent = p.tag || '';
-          document.getElementById('mTitle').textContent = p.title || '';
-          document.getElementById('mMeta').textContent = [p.date, p.readTime].filter(Boolean).join(', ');
-          document.getElementById('mBody').innerHTML = formatBody(p.body);
-          lastFocus = document.activeElement;
-          overlay.classList.add('open');
-          overlay.setAttribute('aria-hidden', 'false');
-          document.body.style.overflow = 'hidden';
-          document.getElementById('modalClose').focus();
+      /* ---------- 3D GLAVNA SLIKA (foto.jpg) ---------- */
+      (function () {
+        const canvas = document.getElementById('hero3d');
+        const fallback = document.getElementById('heroFallback');
+        const useFallback = () => { canvas.style.display = 'none'; fallback.style.display = 'block'; };
+        if (!window.THREE) return useFallback();
+
+        let renderer;
+        try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true }); }
+        catch (e) { return useFallback(); }
+        renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+        renderer.outputEncoding = THREE.sRGBEncoding;
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 100);
+        camera.position.set(0, 0, 9);
+
+        scene.add(new THREE.AmbientLight(0xffffff, 0.75));
+        const key = new THREE.DirectionalLight(0xffffff, 0.6);
+        key.position.set(3, 4, 5);
+        scene.add(key);
+
+        const R = 1.75, T = 0.16;
+        const medal = new THREE.Group();
+
+        // ivica medaljona
+        const edgeGeo = new THREE.CylinderGeometry(R, R, T, 96, 1, true);
+        edgeGeo.rotateX(Math.PI / 2);
+        medal.add(new THREE.Mesh(edgeGeo, new THREE.MeshStandardMaterial({ color: 0xC49A7A, roughness: 0.55, metalness: 0.15 })));
+
+        // poleđina
+        const back = new THREE.Mesh(new THREE.CircleGeometry(R, 96), new THREE.MeshStandardMaterial({ color: 0xE8D5C0, roughness: 0.8 }));
+        back.position.z = -T / 2;
+        back.rotation.y = Math.PI;
+        medal.add(back);
+
+        // tanki prsten na prednjoj strani
+        const rim = new THREE.Mesh(new THREE.RingGeometry(R - 0.035, R + 0.002, 128), new THREE.MeshBasicMaterial({ color: 0xC49A7A }));
+        rim.position.z = T / 2 + 0.002;
+        medal.add(rim);
+
+        scene.add(medal);
+
+        // orbita sa tačkicama oko slike
+        const orbit = new THREE.Group();
+        const pts = [];
+        for (let i = 0; i <= 128; i++) {
+          const a = (i / 128) * Math.PI * 2;
+          pts.push(new THREE.Vector3(Math.cos(a) * 2.35, Math.sin(a) * 2.35, 0));
         }
-        function closeModal() {
-          overlay.classList.remove('open');
-          overlay.setAttribute('aria-hidden', 'true');
-          document.body.style.overflow = '';
-          if (lastFocus) lastFocus.focus();
+        const ring = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),
+          new THREE.LineDashedMaterial({ color: 0xC49A7A, dashSize: 0.08, gapSize: 0.14, transparent: true, opacity: 0.6 }));
+        ring.computeLineDistances();
+        orbit.add(ring);
+        const dots = [];
+        [[0xC49A7A, 0.07, 0], [0x8A9E8C, 0.06, 2.1], [0xC49A7A, 0.045, 3.6], [0x8A9E8C, 0.05, 5.0]].forEach(([c, r, a]) => {
+          const d = new THREE.Mesh(new THREE.SphereGeometry(r, 20, 16), new THREE.MeshStandardMaterial({ color: c, roughness: 0.5 }));
+          d.userData.a = a;
+          orbit.add(d);
+          dots.push(d);
+        });
+        orbit.rotation.x = 1.15;
+        orbit.rotation.y = -0.25;
+        scene.add(orbit);
+
+        // prednja strana: vaša slika
+        new THREE.TextureLoader().load('foto.jpg', tex => {
+          tex.encoding = THREE.sRGBEncoding;
+          tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+          const w = tex.image.width, h = tex.image.height;
+          if (w > h) { tex.repeat.set(h / w, 1); tex.offset.set((1 - h / w) / 2, 0); }
+          else if (h > w) { tex.repeat.set(1, w / h); tex.offset.set(0, (1 - w / h) / 2); }
+          const front = new THREE.Mesh(new THREE.CircleGeometry(R, 96), new THREE.MeshBasicMaterial({ map: tex }));
+          front.position.z = T / 2 + 0.001;
+          medal.add(front);
+        }, undefined, useFallback);
+
+        function resize() {
+          const w = canvas.clientWidth, h = canvas.clientHeight;
+          if (!w || !h) return;
+          renderer.setSize(w, h, false);
+          camera.aspect = w / h;
+          camera.updateProjectionMatrix();
         }
-        document.getElementById('modalClose').addEventListener('click', closeModal);
-        overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
-        addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+        new ResizeObserver(resize).observe(canvas);
+        resize();
 
-        /* ---------- KONTAKT FORMA ---------- */
-        function handleSubmit(e) {
-          e.preventDefault();
-          const form = e.target;
-          const btn = form.querySelector('.submit-btn');
-          const msg = document.getElementById('formMsg');
-          btn.disabled = true;
-          btn.textContent = 'Šaljem';
-          fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(new FormData(form)).toString()
-          })
-            .then(r => {
-              if (!r.ok) throw new Error();
-              form.reset();
-              msg.className = 'form-msg';
-              msg.textContent = 'Hvala, poruka je poslata. Javiću vam se uskoro.';
-              msg.style.display = 'block';
-              btn.style.display = 'none';
-            })
-            .catch(() => {
-              msg.className = 'form-msg error';
-              msg.textContent = 'Poruka nije poslata. Provjerite internet i pokušajte ponovo, ili mi pišite na unutrasnjiprostor@gmail.com.';
-              msg.style.display = 'block';
-              btn.disabled = false;
-              btn.textContent = 'Pošaljite poruku';
-            });
-        }
+        // miš i prevlačenje
+        let tx = 0, ty = 0, spin = 0, dragX = null;
+        canvas.addEventListener('pointermove', e => {
+          const r = canvas.getBoundingClientRect();
+          tx = ((e.clientX - r.left) / r.width - 0.5) * 0.7;
+          ty = ((e.clientY - r.top) / r.height - 0.5) * 0.5;
+          if (dragX !== null) { spin += (e.clientX - dragX) * 0.012; dragX = e.clientX; }
+        });
+        canvas.addEventListener('pointerdown', e => { dragX = e.clientX; canvas.setPointerCapture(e.pointerId); });
+        canvas.addEventListener('pointerup', () => { dragX = null; });
+        canvas.addEventListener('pointerleave', () => { tx = 0; ty = 0; });
 
-        /* ---------- 3D GLAVNA SLIKA (foto.jpg) ---------- */
-        (function () {
-          const canvas = document.getElementById('hero3d');
-          const fallback = document.getElementById('heroFallback');
-          const useFallback = () => { canvas.style.display = 'none'; fallback.style.display = 'block'; };
-          if (!window.THREE) return useFallback();
+        const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        let visible = true;
+        new IntersectionObserver(([en]) => { visible = en.isIntersecting; }).observe(canvas);
 
-          let renderer;
-          try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true }); }
-          catch (e) { return useFallback(); }
-          renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-          renderer.outputEncoding = THREE.sRGBEncoding;
-
-          const scene = new THREE.Scene();
-          const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 100);
-          camera.position.set(0, 0, 9);
-
-          scene.add(new THREE.AmbientLight(0xffffff, 0.75));
-          const key = new THREE.DirectionalLight(0xffffff, 0.6);
-          key.position.set(3, 4, 5);
-          scene.add(key);
-
-          const R = 1.75, T = 0.16;
-          const medal = new THREE.Group();
-
-          // ivica medaljona
-          const edgeGeo = new THREE.CylinderGeometry(R, R, T, 96, 1, true);
-          edgeGeo.rotateX(Math.PI / 2);
-          medal.add(new THREE.Mesh(edgeGeo, new THREE.MeshStandardMaterial({ color: 0xC49A7A, roughness: 0.55, metalness: 0.15 })));
-
-          // poleđina
-          const back = new THREE.Mesh(new THREE.CircleGeometry(R, 96), new THREE.MeshStandardMaterial({ color: 0xE8D5C0, roughness: 0.8 }));
-          back.position.z = -T / 2;
-          back.rotation.y = Math.PI;
-          medal.add(back);
-
-          // tanki prsten na prednjoj strani
-          const rim = new THREE.Mesh(new THREE.RingGeometry(R - 0.035, R + 0.002, 128), new THREE.MeshBasicMaterial({ color: 0xC49A7A }));
-          rim.position.z = T / 2 + 0.002;
-          medal.add(rim);
-
-          scene.add(medal);
-
-          // orbita sa tačkicama oko slike
-          const orbit = new THREE.Group();
-          const pts = [];
-          for (let i = 0; i <= 128; i++) {
-            const a = (i / 128) * Math.PI * 2;
-            pts.push(new THREE.Vector3(Math.cos(a) * 2.35, Math.sin(a) * 2.35, 0));
-          }
-          const ring = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),
-            new THREE.LineDashedMaterial({ color: 0xC49A7A, dashSize: 0.08, gapSize: 0.14, transparent: true, opacity: 0.6 }));
-          ring.computeLineDistances();
-          orbit.add(ring);
-          const dots = [];
-          [[0xC49A7A, 0.07, 0], [0x8A9E8C, 0.06, 2.1], [0xC49A7A, 0.045, 3.6], [0x8A9E8C, 0.05, 5.0]].forEach(([c, r, a]) => {
-            const d = new THREE.Mesh(new THREE.SphereGeometry(r, 20, 16), new THREE.MeshStandardMaterial({ color: c, roughness: 0.5 }));
-            d.userData.a = a;
-            orbit.add(d);
-            dots.push(d);
+        const clock = new THREE.Clock();
+        (function frame() {
+          requestAnimationFrame(frame);
+          if (!visible) return;
+          const t = reduced ? 0 : clock.getElapsedTime();
+          if (dragX === null) spin *= 0.97; // poslije okretanja se vrati
+          medal.rotation.y += ((Math.sin(t * 0.5) * 0.35 + tx + spin) - medal.rotation.y) * 0.07;
+          medal.rotation.x += ((Math.sin(t * 0.35) * 0.08 + ty) - medal.rotation.x) * 0.07;
+          medal.position.y = Math.sin(t * 1.2) * 0.12;
+          dots.forEach((d, i) => {
+            const a = d.userData.a + t * (0.25 + i * 0.04);
+            d.position.set(Math.cos(a) * 2.35, Math.sin(a) * 2.35, 0);
           });
-          orbit.rotation.x = 1.15;
-          orbit.rotation.y = -0.25;
-          scene.add(orbit);
-
-          // prednja strana: vaša slika
-          new THREE.TextureLoader().load('foto.jpg', tex => {
-            tex.encoding = THREE.sRGBEncoding;
-            tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
-            const w = tex.image.width, h = tex.image.height;
-            if (w > h) { tex.repeat.set(h / w, 1); tex.offset.set((1 - h / w) / 2, 0); }
-            else if (h > w) { tex.repeat.set(1, w / h); tex.offset.set(0, (1 - w / h) / 2); }
-            const front = new THREE.Mesh(new THREE.CircleGeometry(R, 96), new THREE.MeshBasicMaterial({ map: tex }));
-            front.position.z = T / 2 + 0.001;
-            medal.add(front);
-          }, undefined, useFallback);
-
-          function resize() {
-            const w = canvas.clientWidth, h = canvas.clientHeight;
-            if (!w || !h) return;
-            renderer.setSize(w, h, false);
-            camera.aspect = w / h;
-            camera.updateProjectionMatrix();
-          }
-          new ResizeObserver(resize).observe(canvas);
-          resize();
-
-          // miš i prevlačenje
-          let tx = 0, ty = 0, spin = 0, dragX = null;
-          canvas.addEventListener('pointermove', e => {
-            const r = canvas.getBoundingClientRect();
-            tx = ((e.clientX - r.left) / r.width - 0.5) * 0.7;
-            ty = ((e.clientY - r.top) / r.height - 0.5) * 0.5;
-            if (dragX !== null) { spin += (e.clientX - dragX) * 0.012; dragX = e.clientX; }
-          });
-          canvas.addEventListener('pointerdown', e => { dragX = e.clientX; canvas.setPointerCapture(e.pointerId); });
-          canvas.addEventListener('pointerup', () => { dragX = null; });
-          canvas.addEventListener('pointerleave', () => { tx = 0; ty = 0; });
-
-          const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-          let visible = true;
-          new IntersectionObserver(([en]) => { visible = en.isIntersecting; }).observe(canvas);
-
-          const clock = new THREE.Clock();
-          (function frame() {
-            requestAnimationFrame(frame);
-            if (!visible) return;
-            const t = reduced ? 0 : clock.getElapsedTime();
-            if (dragX === null) spin *= 0.97; // poslije okretanja se vrati
-            medal.rotation.y += ((Math.sin(t * 0.5) * 0.35 + tx + spin) - medal.rotation.y) * 0.07;
-            medal.rotation.x += ((Math.sin(t * 0.35) * 0.08 + ty) - medal.rotation.x) * 0.07;
-            medal.position.y = Math.sin(t * 1.2) * 0.12;
-            dots.forEach((d, i) => {
-              const a = d.userData.a + t * (0.25 + i * 0.04);
-              d.position.set(Math.cos(a) * 2.35, Math.sin(a) * 2.35, 0);
-            });
-            orbit.position.y = medal.position.y;
-            renderer.render(scene, camera);
-          })();
+          orbit.position.y = medal.position.y;
+          renderer.render(scene, camera);
         })();
-      </script>
+      })();
+    </script>
 </body>
 
 </html>
