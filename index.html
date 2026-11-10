@@ -1298,6 +1298,62 @@
       </div>
     </section>
 
+    <!-- KONTAKT -->
+
+    <section class="contact-section" id="kontakt">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <p class="section-label">Kontakt</p>
+          <h2 class="section-title">Hajde da razgovaramo</h2>
+          <p>Pišite mi preko forme ili emaila i javiću vam se da dogovorimo prvi razgovor.</p>
+          <ul class="contact-info">
+            <li><span class="k">Email</span><a href="mailto:unutrasnjiprostor@gmail.com">unutrasnjiprostor@gmail.com</a>
+            </li>
+            <li><span class="k">Gdje</span><span>Podgorica i online</span></li>
+            <li><span class="k">Kada</span><span>Ponedjeljak do petak, od 9 do 19h</span></li>
+            <li><span class="k">Instagram</span><a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank"
+                rel="noopener">@unutrasnji_prostor</a></li>
+          </ul>
+        </div>
+        <div>
+          <form class="contact-form" id="contactForm" name="kontakt" method="POST" data-netlify="true"
+            onsubmit="handleSubmit(event)">
+            <input type="hidden" name="form-name" value="kontakt" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-ime">Ime</label>
+                <input id="f-ime" type="text" name="ime" placeholder="Vaše ime" required />
+              </div>
+              <div class="form-group">
+                <label for="f-email">Email</label>
+                <input id="f-email" type="email" name="email" placeholder="vasa@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-tema">Tema razgovora</label>
+              <select id="f-tema" name="tema">
+                <option value="">Odaberite temu</option>
+                <option>Anksioznost i stres</option>
+                <option>Odnosi i veze</option>
+                <option>Trauma i gubitak</option>
+                <option>Lični rast</option>
+                <option>Burnout i posao</option>
+                <option>Nešto drugo</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="f-poruka">Poruka</label>
+              <textarea id="f-poruka" name="poruka"
+                placeholder="Ako želite, napišite ukratko šta vas dovodi."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Pošaljite poruku</button>
+            <p class="form-msg" id="formMsg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
     <!-- USLUGE -->
     <section class="services" id="usluge">
       <div class="services-inner">
@@ -1358,60 +1414,7 @@
       </div>
     </section>
 
-    <!-- KONTAKT -->
 
-    <section class="contact-section" id="kontakt">
-      <div class="contact-inner">
-        <div class="contact-left">
-          <p class="section-label">Kontakt</p>
-          <h2 class="section-title">Hajde da razgovaramo</h2>
-          <p>Pišite mi preko forme ili emaila i javiću vam se da dogovorimo prvi razgovor.</p>
-          <ul class="contact-info">
-            <li><span class="k">Email</span><a href="mailto:unutrasnjiprostor@gmail.com">unutrasnjiprostor@gmail.com</a>
-            </li>
-            <li><span class="k">Gdje</span><span>Podgorica i online</span></li>
-            <li><span class="k">Kada</span><span>Ponedjeljak do petak, od 9 do 19h</span></li>
-            <li><span class="k">Instagram</span><a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank"
-                rel="noopener">@unutrasnji_prostor</a></li>
-          </ul>
-        </div>
-        <div>
-          <form class="contact-form" id="contactForm" name="kontakt" method="POST" data-netlify="true"
-            onsubmit="handleSubmit(event)">
-            <input type="hidden" name="form-name" value="kontakt" />
-            <div class="form-row">
-              <div class="form-group">
-                <label for="f-ime">Ime</label>
-                <input id="f-ime" type="text" name="ime" placeholder="Vaše ime" required />
-              </div>
-              <div class="form-group">
-                <label for="f-email">Email</label>
-                <input id="f-email" type="email" name="email" placeholder="vasa@email.com" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="f-tema">Tema razgovora</label>
-              <select id="f-tema" name="tema">
-                <option value="">Odaberite temu</option>
-                <option>Anksioznost i stres</option>
-                <option>Odnosi i veze</option>
-                <option>Trauma i gubitak</option>
-                <option>Lični rast</option>
-                <option>Burnout i posao</option>
-                <option>Nešto drugo</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="f-poruka">Poruka</label>
-              <textarea id="f-poruka" name="poruka"
-                placeholder="Ako želite, napišite ukratko šta vas dovodi."></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Pošaljite poruku</button>
-            <p class="form-msg" id="formMsg" role="status"></p>
-          </form>
-        </div>
-      </div>
-    </section>
 
     <!-- Netlify form detection (ne brisati) -->
     <form name="kontakt" data-netlify="true" hidden>
