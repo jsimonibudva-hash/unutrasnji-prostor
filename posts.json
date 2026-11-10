@@ -1,4 +1,5 @@
 [
+  
   {
     "tag": "Lični rast",
     "title": "Zašto je promjena teška čak i kada je dobra",
@@ -20,13 +21,13 @@
     "body": "Niko se ne rodi kao profesionalac, to već znamo — ali zašto onda očekujemo to od sebe?"
   },
   {
-    "tag": "Lični rast",
-    "title": "Kad biti produktivan postane bijeg od sebe",
-    "excerpt": "Burnout nije samo umor od posla. Često je signal da smo se izgubili u ulozi koju igramo.",
-    "date": "18. februar 2025",
-    "readTime": "6 min čitanja",
-    "bg": "linear-gradient(135deg,#F7F2EC,#E8D5C0)",
-    "symbol": "○",
-    "body": "Mnogi od nas su naučili da je vrijednost čovjeka vezana za njegovu produktivnost."
+    "tag": "Emocije",
+    "title": "Mislim, dakle osjećam?",
+    "excerpt": "Mnogi ljudi danas mogu do detalja da objasne šta im je. Ali kad ih pitaš kako se osjećaju, nastane tišina.",
+    "date": "10. novembar 2026",
+    "readTime": "2 min čitanja",
+    "image": "mislimosjecam.jpg",
+    "body": "Mnogi ljudi danas mogu do detalja da objasne šta im je.\nZnaju odakle im nesigurnost, zašto biraju pogrešne partnere, koji im je stil privrženosti, šta su „ponijeli iz djetinjstva“.\n\nImaju odgovor na sve.\n\nAli kad ih pitaš kako se osjećaju, nastane tišina. Ili još jedno objašnjenje.\n\nJer razumjeti emociju nije isto što i osjetiti je.\nMožemo godinama pričati o svojoj tuzi, a da je nikad ne zaplačemo. Možemo znati sve o svom strahu, a da mu nikad ne dozvolimo da bude tu.\n\nU psihoterapiji to zovemo intelektualizacija.\nTo je odbrana kojom emociju držimo na sigurnoj udaljenosti. Dok je objašnjavamo, ne moramo da je osjetimo. A dok je ne osjetimo, ne moramo ni da se suočimo sa onim što leži ispod.\n\nI zato se ništa ne mijenja.\n\nNe zato što ne znamo dovoljno o sebi, nego zato što to znanje koristimo da se ne bismo sreli sa sobom.\nMožda je pravi rad ono kad prestanemo da objašnjavamo.\n\nKad sjednemo sa sobom, bez analize, i samo pustimo da bude ono što jeste.\n\nKad si posljednji put to uradio/la?"
   }
+  
 ]
