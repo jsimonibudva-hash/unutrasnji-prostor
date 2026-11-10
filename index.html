@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Psihoterapija Jovana Simoni | Psihoterapeut Podgorica</title>
+  <title>Psihoterapija Podgorica | Jovana Simoni</title>
   <meta name="description"
     content="Psihoterapija i psihološko savjetovanje u Podgorici i online za cijelu Crnu Goru. Rad sa anksioznošću, depresijom, odnosima i ličnim rastom. Zakažite prvi razgovor." />
   <meta name="keywords"
     content="psihoterapeut Podgorica, psihoterapija Podgorica, psihoterapeut Budva, psihoterapeut Crna Gora, terapija Podgorica, psiholog Podgorica, online psihoterapija, Jovana Simoni, unutrašnji prostor" />
   <meta name="author" content="Jovana Simoni" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <link rel="canonical" href="https://unutrasnjiprostor.me/" />
+
   <meta name="geo.region" content="ME" />
   <meta name="geo.placename" content="Podgorica, Crna Gora" />
   <meta name="geo.position" content="42.4304;19.2594" />
@@ -39,7 +39,7 @@
     ],
     "address": { "@type": "PostalAddress", "addressLocality": "Podgorica", "addressCountry": "ME" },
     "geo": { "@type": "GeoCoordinates", "latitude": 42.4304, "longitude": 19.2594 },
-    "founder": { "@type": "Person", "name": "Jovana Simoni", "jobTitle": "Psihoterapeut" },
+    "founder": { "@type": "Person", "name": "Jovana Simoni", "jobTitle": "Terapeutkinja pod supervizijom" },
     "sameAs": ["https://www.instagram.com/unutrasnji_prostor/"]
   }
   </script>
@@ -1162,7 +1162,7 @@
   <section id="o-meni">
     <div class="about-section">
       <div class="about-visual">
-        <div class="about-circle"><img src="jovana.jpg" alt="Jovana Simoni, psihoterapeut" /></div>
+        <div class="about-circle"><img src="jovana.jpg" alt="Jovana Simoni" /></div>
         <div class="about-quote">
           <p>„Tišina je ponekad najglasniji odgovor koji možemo dati sebi.“</p>
         </div>
@@ -1340,6 +1340,17 @@
 
     /* ---------- BLOG iz posts.json ---------- */
     let posts = [];
+    function postSlugs(list) {
+      const map = { 'š': 's', 'đ': 'dj', 'č': 'c', 'ć': 'c', 'ž': 'z', 'Š': 's', 'Đ': 'dj', 'Č': 'c', 'Ć': 'c', 'Ž': 'z' };
+      const slugify = s => String(s || '').replace(/[šđčćžŠĐČĆŽ]/g, c => map[c]).toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'tekst';
+      const used = {};
+      return list.map(p => {
+        let s = p.slug ? slugify(p.slug) : slugify(p.title);
+        if (used[s]) { used[s] += 1; s = s + '-' + used[s]; } else { used[s] = 1; }
+        return s;
+      });
+    }
     const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
     // Iz "bg" polja izvuče ime slike, npr. url('blog1.jpg') daje blog1.jpg
@@ -1364,10 +1375,10 @@
         if (!posts.length) { grid.innerHTML = '<p class="blog-status">Uskoro novi tekstovi.</p>'; return; }
         posts.forEach((p, i) => {
           const img = p.image || imageFrom(p.bg);
-          const card = document.createElement('button');
-          card.type = 'button';
+          const card = document.createElement('a');
           card.className = 'blog-card';
-          card.addEventListener('click', () => openModal(i));
+          card.href = '/blog/' + postSlugs(posts)[i] + '/';
+          card.style.textDecoration = 'none';
           card.innerHTML = `
           <div class="card-thumb" style="${img ? '' : 'background:' + esc(p.bg || '')}">
             ${img ? `<img src="${esc(img)}" alt="${esc(p.title)}" loading="lazy">` : `<span class="sym">${esc(p.symbol || '')}</span>`}
