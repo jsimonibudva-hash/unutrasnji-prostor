@@ -1233,6 +1233,128 @@
     </div>
   </section>
 
+
+
+  <!-- O MENI -->
+  <section id="o-meni">
+    <div class="about-section">
+      <div class="about-visual">
+        <div class="about-circle"><img src="jovana.jpg" alt="Jovana Simoni" /></div>
+        <div class="about-quote">
+          <p>„Ne mijenjamo se kad shvatimo. Mijenjamo se kad osjetimo.“</p>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-label">O meni</p>
+        <h2 class="section-title">Zdravo, ja sam Jovana</h2>
+        <p>
+        <p>Filozofkinja sam po obrazovanju i terapeutkinja pod supervizijom</p>
+        <p>U terapiji prvo gradimo odnos. Bez povjerenja nijedna tehnika ne pomaže, zato je prvi zadatak da se
+          osjećate
+          sigurno i da možete reći ono što inače prećutite.</p>
+        <p>Radim po integrativnom psihodinamskom pristupu. Ne zadržavamo se samo na simptomu. Gledamo obrasce koji se
+          ponavljaju, šta vam donose, a šta vas koštaju, i koje emocionalne sposobnosti nisu imale priliku da se
+          razviju: da prepoznate i imenujete ono što osjećate, da podnesete frustraciju, da u istoj osobi vidite i
+          dobro
+          i loše, da donesete odluku i stanete iza nje.</p>
+        <p>Ako vam nešto od ovoga zvuči poznato, pišite mi. Prvi razgovor služi da se upoznamo i vidimo da li nam
+          odgovara da radimo zajedno.</p>
+        </p>
+        <ul class="about-tags">
+          <li>Anksioznost</li>
+          <li>Depresija</li>
+          <li>Odnosi</li>
+          <li>Trauma</li>
+          <li>Samopoštovanje</li>
+          <li>Burnout</li>
+          <li>Lični rast</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- USLUGE -->
+  <section class="services" id="usluge">
+    <div class="services-inner">
+      <p class="section-label">Usluge</p>
+      <h2 class="section-title">Kako možemo da radimo</h2>
+      <div class="svc-grid">
+        <div class="svc">
+          <h3>Individualna psihoterapija</h3>
+          <p>Redovni susreti jednom sedmično, uživo u Podgorici. Prostor da polako i dublje razumijete sebe.</p>
+        </div>
+        <div class="svc">
+          <h3>Online terapija</h3>
+          <p>Isti rad, samo preko video poziva. Pogodno ako ste u Crnoj Gori ili bilo gdje drugo.</p>
+        </div>
+        <div class="svc">
+          <h3>Grupna terapija</h3>
+          <p>Rad u manjoj grupi ljudi koji prolaze kroz slične stvari. U grupi vidimo kako se ponašamo u odnosima sa
+            drugima i učimo iz tuđih iskustava koliko i iz svojih. Pišite mi za termine i uslove.</p>
+        </div>
+      </div>
+      <p class="svc-note">Ako tražite psihoterapeuta u Podgorici, ili vam treba online psihoterapija bilo gdje u Crnoj
+        Gori, pišite mi pa da dogovorimo prvi razgovor.</p>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+
+  <section class="contact-section" id="kontakt">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <p class="section-label">Kontakt</p>
+        <h2 class="section-title">Hajde da razgovaramo</h2>
+        <p>Pišite mi preko forme ili emaila i javiću vam se da dogovorimo prvi razgovor.</p>
+        <ul class="contact-info">
+          <li><span class="k">Email</span><a href="mailto:unutrasnjiprostor@gmail.com">unutrasnjiprostor@gmail.com</a>
+          </li>
+          <li><span class="k">Gdje</span><span>Podgorica i online</span></li>
+          <li><span class="k">Kada</span><span>Ponedjeljak do petak, od 9 do 19h</span></li>
+          <li><span class="k">Instagram</span><a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank"
+              rel="noopener">@unutrasnji_prostor</a></li>
+        </ul>
+      </div>
+      <div>
+        <form class="contact-form" id="contactForm" name="kontakt" method="POST" data-netlify="true"
+          onsubmit="handleSubmit(event)">
+          <input type="hidden" name="form-name" value="kontakt" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-ime">Ime</label>
+              <input id="f-ime" type="text" name="ime" placeholder="Vaše ime" required />
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email</label>
+              <input id="f-email" type="email" name="email" placeholder="vasa@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-tema">Tema razgovora</label>
+            <select id="f-tema" name="tema">
+              <option value="">Odaberite temu</option>
+              <option>Anksioznost i stres</option>
+              <option>Odnosi i veze</option>
+              <option>Trauma i gubitak</option>
+              <option>Lični rast</option>
+              <option>Burnout i posao</option>
+              <option>Nešto drugo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-poruka">Poruka</label>
+            <textarea id="f-poruka" name="poruka" placeholder="Ako želite, napišite ukratko šta vas dovodi."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Pošaljite poruku</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- BLOG -->
   <section class="blog-section" id="blog">
     <div class="blog-header">
@@ -1259,129 +1381,6 @@
       </button>
     </div>
     <a class="all-posts" href="/blog/">Svi tekstovi</a>
-
-    <!-- O MENI -->
-    <section id="o-meni">
-      <div class="about-section">
-        <div class="about-visual">
-          <div class="about-circle"><img src="jovana.jpg" alt="Jovana Simoni" /></div>
-          <div class="about-quote">
-            <p>„Ne mijenjamo se kad shvatimo. Mijenjamo se kad osjetimo.“</p>
-          </div>
-        </div>
-        <div class="about-content">
-          <p class="section-label">O meni</p>
-          <h2 class="section-title">Zdravo, ja sam Jovana</h2>
-          <p>
-          <p>Filozofkinja sam po obrazovanju i terapeutkinja pod supervizijom</p>
-          <p>U terapiji prvo gradimo odnos. Bez povjerenja nijedna tehnika ne pomaže, zato je prvi zadatak da se
-            osjećate
-            sigurno i da možete reći ono što inače prećutite.</p>
-          <p>Radim po integrativnom psihodinamskom pristupu. Ne zadržavamo se samo na simptomu. Gledamo obrasce koji se
-            ponavljaju, šta vam donose, a šta vas koštaju, i koje emocionalne sposobnosti nisu imale priliku da se
-            razviju: da prepoznate i imenujete ono što osjećate, da podnesete frustraciju, da u istoj osobi vidite i
-            dobro
-            i loše, da donesete odluku i stanete iza nje.</p>
-          <p>Ako vam nešto od ovoga zvuči poznato, pišite mi. Prvi razgovor služi da se upoznamo i vidimo da li nam
-            odgovara da radimo zajedno.</p>
-          </p>
-          <ul class="about-tags">
-            <li>Anksioznost</li>
-            <li>Depresija</li>
-            <li>Odnosi</li>
-            <li>Trauma</li>
-            <li>Samopoštovanje</li>
-            <li>Burnout</li>
-            <li>Lični rast</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <!-- USLUGE -->
-    <section class="services" id="usluge">
-      <div class="services-inner">
-        <p class="section-label">Usluge</p>
-        <h2 class="section-title">Kako možemo da radimo</h2>
-        <div class="svc-grid">
-          <div class="svc">
-            <h3>Individualna psihoterapija</h3>
-            <p>Redovni susreti jednom sedmično, uživo u Podgorici. Prostor da polako i dublje razumijete sebe.</p>
-          </div>
-          <div class="svc">
-            <h3>Online terapija</h3>
-            <p>Isti rad, samo preko video poziva. Pogodno ako ste u Crnoj Gori ili bilo gdje drugo.</p>
-          </div>
-          <div class="svc">
-            <h3>Grupna terapija</h3>
-            <p>Rad u manjoj grupi ljudi koji prolaze kroz slične stvari. U grupi vidimo kako se ponašamo u odnosima sa
-              drugima i učimo iz tuđih iskustava koliko i iz svojih. Pišite mi za termine i uslove.</p>
-          </div>
-        </div>
-        <p class="svc-note">Ako tražite psihoterapeuta u Podgorici, ili vam treba online psihoterapija bilo gdje u Crnoj
-          Gori, pišite mi pa da dogovorimo prvi razgovor.</p>
-      </div>
-    </section>
-
-    <!-- KONTAKT -->
-
-    <section class="contact-section" id="kontakt">
-      <div class="contact-inner">
-        <div class="contact-left">
-          <p class="section-label">Kontakt</p>
-          <h2 class="section-title">Hajde da razgovaramo</h2>
-          <p>Pišite mi preko forme ili emaila i javiću vam se da dogovorimo prvi razgovor.</p>
-          <ul class="contact-info">
-            <li><span class="k">Email</span><a href="mailto:unutrasnjiprostor@gmail.com">unutrasnjiprostor@gmail.com</a>
-            </li>
-            <li><span class="k">Gdje</span><span>Podgorica i online</span></li>
-            <li><span class="k">Kada</span><span>Ponedjeljak do petak, od 9 do 19h</span></li>
-            <li><span class="k">Instagram</span><a href="https://www.instagram.com/unutrasnji_prostor/" target="_blank"
-                rel="noopener">@unutrasnji_prostor</a></li>
-          </ul>
-        </div>
-        <div>
-          <form class="contact-form" id="contactForm" name="kontakt" method="POST" data-netlify="true"
-            onsubmit="handleSubmit(event)">
-            <input type="hidden" name="form-name" value="kontakt" />
-            <div class="form-row">
-              <div class="form-group">
-                <label for="f-ime">Ime</label>
-                <input id="f-ime" type="text" name="ime" placeholder="Vaše ime" required />
-              </div>
-              <div class="form-group">
-                <label for="f-email">Email</label>
-                <input id="f-email" type="email" name="email" placeholder="vasa@email.com" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="f-tema">Tema razgovora</label>
-              <select id="f-tema" name="tema">
-                <option value="">Odaberite temu</option>
-                <option>Anksioznost i stres</option>
-                <option>Odnosi i veze</option>
-                <option>Trauma i gubitak</option>
-                <option>Lični rast</option>
-                <option>Burnout i posao</option>
-                <option>Nešto drugo</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="f-poruka">Poruka</label>
-              <textarea id="f-poruka" name="poruka"
-                placeholder="Ako želite, napišite ukratko šta vas dovodi."></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Pošaljite poruku</button>
-            <p class="form-msg" id="formMsg" role="status"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-
     <!-- FAQ -->
     <section class="faq" id="faq">
       <div class="faq-inner">
